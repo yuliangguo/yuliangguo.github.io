@@ -50,5 +50,50 @@
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+    <tr onmouseout="seabird_stop()" onmouseover="seabird_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+            <div class="two" id='seabird_image'><video  width=100% muted autoplay loop>
+            <source src="images/Seabird_pipeline.png" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/Seabird_analysis_teaser.png' width=100%>
+            </div>
+            <script type="text/javascript">
+            function seabird_start() {
+                document.getElementById('seabird_image').style.opacity = "1";
+            }
+    
+            function seabird_stop() {
+                document.getElementById('seabird_image').style.opacity = "0";
+            }
+            seabird_stop()
+            </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://seabird-3d.github.io/">
+            <span class="papertitle">SeaBird: Segmentation in Bird’s View with Dice Loss Improves Monocular 3D Detection of Large Objects</span>
+            </a>
+            <br>
+            <a href="https://scholar.google.co.in/citations?user=BerK__sAAAAJ&hl=en">Abhinav Kumar</a>,
+            <strong>Yuliang Guo</strong>
+            <a href="https://scholar.google.com/citations?user=cL4bNBwAAAAJ&hl=en">Xinyu Huang</a>,
+            <a href="https://scholar.google.com/citations?user=6NfC90UAAAAJ&hl=en">Liu Ren</a>,
+            <a href="https://scholar.google.com/citations?user=Bii0w1oAAAAJ&hl=en">Xiaoming Liu</a>,
+            <br>
+            <em>CVPR</em>, 2024
+            <br>
+            <a href="https://github.com/abhi1kumar/SeaBird">project page</a>
+            /
+            <a href="https://github.com/abhi1kumar/SeaBird">arXiv</a>
+            <p></p>
+            <p>
+              We mathematically prove that the dice loss leads to superior noise-robustness and model convergence for large objects compared to regression losses for a simplified case. We introduced SeaBird, which effectively integrates BEV segmentation on foreground ob-
+              jects for 3D detection, with the segmentation head trained with the dice loss. SeaBird achieves SoTA results on the KITTI-360 leaderboard and improves existing detectors on nuScenes leaderboard, particularly for large objects.
+            </p>
+        </td>
+        </tr>
+    
   </body>
 </html>
