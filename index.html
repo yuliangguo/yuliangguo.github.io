@@ -55,11 +55,11 @@
         <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
             <div class="two" id='seabird_image'><video  width=100% muted autoplay loop>
-            <source src="images/Seabird_pipeline.png" type="video/mp4">
+            <source src="TODO" type="video/mp4">
             Your browser does not support the video tag.
             </video></div>
             <img src='images/Seabird_analysis_teaser.png' width=100%>
-            <img src='images/Seabird_pipeline.png' width=100%>
+            <img src='images/Seabird_teaser_nuscenes.png' width=100%>
             </div>
             <script type="text/javascript">
             function seabird_start() {
@@ -81,20 +81,64 @@
             <strong>Yuliang Guo</strong>
             <a href="https://scholar.google.com/citations?user=cL4bNBwAAAAJ&hl=en">Xinyu Huang</a>,
             <a href="https://scholar.google.com/citations?user=6NfC90UAAAAJ&hl=en">Liu Ren</a>,
-            <a href="https://scholar.google.com/citations?user=Bii0w1oAAAAJ&hl=en">Xiaoming Liu</a>,
+            <a href="https://www.cse.msu.edu/~liuxm/index2.html">Xiaoming Liu</a>,
             <br>
             <em>CVPR</em>, 2024
             <br>
             <a href="https://github.com/abhi1kumar/SeaBird">Github</a>
             /
-            <a href="https://github.com/abhi1kumar/SeaBird">arXiv</a>
+            <a href="TODO">arXiv</a>
             <p></p>
             <p>
-              We mathematically prove that the dice loss leads to superior noise-robustness and model convergence for large objects compared to regression losses for a simplified case. We introduced SeaBird, which effectively integrates BEV segmentation on foreground ob-
-              jects for 3D detection, with the segmentation head trained with the dice loss. SeaBird achieves SoTA results on the KITTI-360 leaderboard and improves existing detectors on nuScenes leaderboard, particularly for large objects.
+                SeaBird achieves SoTA results on the KITTI-360 leaderboard and improves existing detectors on nuScenes leaderboard, particularly for large objects. This paper includes mathematical proof that the dice loss leads to superior noise-robustness and model convergence for large objects compared to regression losses for a simplified case. 
             </p>
         </td>
         </tr>
     
+
+    <tr onmouseout="behindtheveil_stop()" onmouseover="behindtheveil_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+            <div class="two" id='behindtheveil_image'><video  width=100% muted autoplay loop>
+            <source src="TODO" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/Behind_the_veil.png' width=100%>
+            </div>
+            <script type="text/javascript">
+            function behindtheveil_start() {
+                document.getElementById('behindtheveil_image').style.opacity = "1";
+            }
+    
+            function behindtheveil_stop() {
+                document.getElementById('behindtheveil_image').style.opacity = "0";
+            }
+            behindtheveil_stop()
+            </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="TODO">
+            <span class="papertitle">Behind the Veil: Enhanced Indoor 3D Scene Reconstruction with Occluded Surfaces Completion</span>
+            </a>
+            <br>
+            <a href="https://scholar.google.com/citations?user=IaAVzz8AAAAJ&hl=en">Su Sun</a>,
+            <a href="https://scholar.google.com/citations?user=EAC-8m0AAAAJ&hl=zh-CN">Cheng Zhao</a>,
+            <strong>Yuliang Guo</strong>
+            <a href="https://scholar.google.com/citations?user=UfGLSTkAAAAJ&hl=en">Ruoyu Wang</a>,
+            <a href="https://scholar.google.com/citations?user=cL4bNBwAAAAJ&hl=en">Xinyu Huang</a>,
+            <a href="https://www.cerias.purdue.edu/site/people/faculty/view/1414">Victor(Yingjie) Chen</a>,
+            <a href="https://scholar.google.com/citations?user=6NfC90UAAAAJ&hl=en">Liu Ren</a>,
+            <br>
+            <em>CVPR</em>, 2024
+            <br>
+            <a href="TODO">Github</a>
+            /
+            <a href="TODO">arXiv</a>
+            <p></p>
+            <p>
+                Our method, for the first time, tackles the task of completing the occluded scene surfaces, resulting in a complete 3D scene mesh. The core idea of our method is to utilize the learned contextual structure prior from various scenes to infer the occluded geometry from visible depth measurements on an unseen scene. 
+            </p>
+        </td>
+        </tr>
   </body>
 </html>
