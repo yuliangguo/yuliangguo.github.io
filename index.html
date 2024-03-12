@@ -140,5 +140,54 @@
             </p>
         </td>
         </tr>
+
+    
+    <tr onmouseout="copypaste_stop()" onmouseover="copypaste_start()">
+        <td style="padding:20px;width:25%;vertical-align:middle">
+            <div class="one">
+            <div class="two" id='copypaste_image'><video  width=100% muted autoplay loop>
+            <img src="images/3D-copy-paste.gif" width=100%>
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/3dcopy.png' width=100%>
+            </div>
+            <script type="text/javascript">
+            function copypaste_start() {
+                document.getElementById('copypaste_image').style.opacity = "1";
+            }
+    
+            function copypaste_stop() {
+                document.getElementById('copypaste_image').style.opacity = "0";
+            }
+            copypaste_stop()
+            </script>
+        </td>
+        <td style="padding:20px;width:75%;vertical-align:middle">
+            <a href="https://gyhandy.github.io/3D-Copy-Paste/">
+            <span class="papertitle">3D Copy-Paste: Physically-Plausible Object Insertion for Monocular 3D Detection</span>
+            </a>
+            <br>
+            Yuhao Ge,
+            Hong-Xing Yu,
+            Cheng Zhao,
+            <strong>Yuliang Guo</strong>
+            Xinyu Huang,
+            Liu Ren,
+            Laurent Itti,
+            Jiajun Wu,
+            <br>
+            <em>NeurIPS</em>, 2023
+            <br>
+            <a href="https://gyhandy.github.io/3D-Copy-Paste/">Project</a>
+            /
+            <a href="https://github.com/gyhandy/3D-Copy-Paste">Github</a>
+            /
+            <a href="https://arxiv.org/pdf/2312.05277.pdf">arXiv</a>
+            <p></p>
+            <p>
+                In this paper, we propose a physically plausible indoor 3D object insertion approach to automatically "copy" virtual objects and "paste" them into real scenes. The resulting objects in scenes generate have 3D bounding boxes with plausible physical location and illumination, augmenting existing indoor scene datasets such as SUNRGBD.
+            </p>
+        </td>
+        </tr>
   </body>
 </html>
