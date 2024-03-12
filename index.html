@@ -90,7 +90,7 @@
             <a href="TODO">arXiv</a>
             <p></p>
             <p>
-                A method integrating bird-eye view segmentation into 3D detection pipeline with dice-loss. We mathematically prove that the dice loss leads to superior noise-robustness and model convergence for large objects compared to regression losses for a simplified case.
+                A method integrating bird-eye view segmentation into monolucar 3D detection. We mathematically prove that the dice loss leads to superior noise-robustness and model convergence for large objects compared to regression losses.
             </p>
         </td>
         </tr>
@@ -182,10 +182,57 @@
             /
             <a href="https://github.com/gyhandy/3D-Copy-Paste">Github</a>
             /
-            <a href="https://arxiv.org/pdf/2312.05277.pdf">arXiv</a>
+            <a href="https://arxiv.org/abs/2312.05277">arXiv</a>
             <p></p>
             <p>
                 A physically plausible indoor 3D object insertion approach to automatically "copy" virtual objects and "paste" them into real scenes.
+            </p>
+        </td>
+        </tr>
+
+    <tr onmouseout="suoslam_stop()" onmouseover="suoslam_start()">
+        <td style="padding:20px;width:40%;vertical-align:middle">
+            <div class="one">
+            <div class="two" id='suoslam_image'><video  width=100% muted autoplay loop>
+            <source src="images/suo_slam_demo.gif" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/suo_slam_demo.gif' width=100%>
+            <img src='images/suo_slam_teaser.png' width=100%>
+            </div>
+            <script type="text/javascript">
+            function suoslam_start() {
+                document.getElementById('suoslam_image').style.opacity = "1";
+            }
+    
+            function suoslam_stop() {
+                document.getElementById('suoslam_image').style.opacity = "0";
+            }
+            suoslam_stop()
+            </script>
+        </td>
+        <td style="padding:20px;width:60%;vertical-align:middle">
+            <a href="https://github.com/rpng/suo_slam">
+            <span class="papertitle">Symmetry and Uncertainty-Aware Object SLAM for 6DoF Object Pose Estimation</span>
+            </a>
+            <br>
+            Nathaniel Merrill,
+            <strong>Yuliang Guo</strong>,
+            Xingxing Zuo,
+            Xinyu Huang,
+            Stefan Leutenegger,
+            Xi Peng,
+            Liu Ren,
+            Guoquan Huang
+            <br>
+            <em>CVPR</em>, 2022
+            <br>
+            <a href="Symmetry and Uncertainty-Aware Object SLAM for 6DoF Object Pose Estimation">Github</a>
+            /
+            <a href="https://arxiv.org/abs/2205.01823">arXiv</a>
+            <p></p>
+            <p>
+                A keypoint-based object-level SLAM framework that can provide globally consistent 6DoF pose estimates for symmetric and asymmetric objects.
             </p>
         </td>
         </tr>
