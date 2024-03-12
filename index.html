@@ -52,14 +52,14 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
     <tr onmouseout="seabird_stop()" onmouseover="seabird_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
+        <td style="padding:20px;width:40%;vertical-align:middle">
             <div class="one">
             <div class="two" id='seabird_image'><video  width=100% muted autoplay loop>
             <source src="TODO" type="video/mp4">
             Your browser does not support the video tag.
             </video></div>
             <img src='images/Seabird_analysis_teaser.png' width=100%>
-            <img src='images/Seabird_teaser_nuscenes.png' width=100%>
+            <!-- <img src='images/Seabird_teaser_nuscenes.png' width=100%> -->
             </div>
             <script type="text/javascript">
             function seabird_start() {
@@ -72,16 +72,16 @@
             seabird_stop()
             </script>
         </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
+        <td style="padding:20px;width:60%;vertical-align:middle">
             <a href="https://github.com/abhi1kumar/SeaBird/">
             <span class="papertitle">SeaBird: Segmentation in Bird’s View with Dice Loss Improves Monocular 3D Detection of Large Objects</span>
             </a>
             <br>
-            <a href="https://scholar.google.co.in/citations?user=BerK__sAAAAJ&hl=en">Abhinav Kumar</a>,
-            <strong>Yuliang Guo</strong>
-            <a href="https://scholar.google.com/citations?user=cL4bNBwAAAAJ&hl=en">Xinyu Huang</a>,
-            <a href="https://scholar.google.com/citations?user=6NfC90UAAAAJ&hl=en">Liu Ren</a>,
-            <a href="https://www.cse.msu.edu/~liuxm/index2.html">Xiaoming Liu</a>,
+            Abhinav Kumar,
+            <strong>Yuliang Guo</strong>,
+            Xinyu Huang,
+            Liu Ren,
+            Xiaoming Liu
             <br>
             <em>CVPR</em>, 2024
             <br>
@@ -90,14 +90,14 @@
             <a href="TODO">arXiv</a>
             <p></p>
             <p>
-                SeaBird achieves SoTA results on the KITTI-360 leaderboard and improves existing detectors on nuScenes leaderboard, particularly for large objects. This paper includes mathematical proof that the dice loss leads to superior noise-robustness and model convergence for large objects compared to regression losses for a simplified case. 
+                A method integrating bird-eye view segmentation into 3D detection pipeline with dice-loss. We mathematically prove that the dice loss leads to superior noise-robustness and model convergence for large objects compared to regression losses for a simplified case.
             </p>
         </td>
         </tr>
     
 
     <tr onmouseout="behindtheveil_stop()" onmouseover="behindtheveil_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
+        <td style="padding:20px;width:40%;vertical-align:middle">
             <div class="one">
             <div class="two" id='behindtheveil_image'><video  width=100% muted autoplay loop>
             <source src="TODO" type="video/mp4">
@@ -116,18 +116,18 @@
             behindtheveil_stop()
             </script>
         </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
+        <td style="padding:20px;width:60%;vertical-align:middle">
             <a href="TODO">
             <span class="papertitle">Behind the Veil: Enhanced Indoor 3D Scene Reconstruction with Occluded Surfaces Completion</span>
             </a>
             <br>
-            <a href="https://scholar.google.com/citations?user=IaAVzz8AAAAJ&hl=en">Su Sun</a>,
-            <a href="https://scholar.google.com/citations?user=EAC-8m0AAAAJ&hl=zh-CN">Cheng Zhao</a>,
-            <strong>Yuliang Guo</strong>
-            <a href="https://scholar.google.com/citations?user=UfGLSTkAAAAJ&hl=en">Ruoyu Wang</a>,
-            <a href="https://scholar.google.com/citations?user=cL4bNBwAAAAJ&hl=en">Xinyu Huang</a>,
-            <a href="https://www.cerias.purdue.edu/site/people/faculty/view/1414">Victor(Yingjie) Chen</a>,
-            <a href="https://scholar.google.com/citations?user=6NfC90UAAAAJ&hl=en">Liu Ren</a>,
+            Su Sun,
+            Cheng Zhao,
+            <strong>Yuliang Guo</strong>,
+            Ruoyu Wang,
+            Xinyu Huang,
+            Victor(Yingjie) Chen,
+            Liu Ren
             <br>
             <em>CVPR</em>, 2024
             <br>
@@ -136,14 +136,14 @@
             <a href="TODO">arXiv</a>
             <p></p>
             <p>
-                Our method, for the first time, tackles the task of completing the occluded scene surfaces, resulting in a complete 3D scene mesh. The core idea of our method is to utilize the learned contextual structure prior from various scenes to infer the occluded geometry from visible depth measurements on an unseen scene. 
+                An method, for the first time, tackles the task of completing the occluded scene surfaces, resulting in a complete 3D scene mesh.
             </p>
         </td>
         </tr>
 
     
     <tr onmouseout="copypaste_stop()" onmouseover="copypaste_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
+        <td style="padding:20px;width:40%;vertical-align:middle">
             <div class="one">
             <div class="two" id='copypaste_image'><video  width=100% muted autoplay loop>
             <img src="images/3D-copy-paste.gif" width=100%>
@@ -162,7 +162,7 @@
             copypaste_stop()
             </script>
         </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
+        <td style="padding:20px;width:60%;vertical-align:middle">
             <a href="https://gyhandy.github.io/3D-Copy-Paste/">
             <span class="papertitle">3D Copy-Paste: Physically-Plausible Object Insertion for Monocular 3D Detection</span>
             </a>
@@ -170,11 +170,11 @@
             Yuhao Ge,
             Hong-Xing Yu,
             Cheng Zhao,
-            <strong>Yuliang Guo</strong>
+            <strong>Yuliang Guo</strong>,
             Xinyu Huang,
             Liu Ren,
             Laurent Itti,
-            Jiajun Wu,
+            Jiajun Wu
             <br>
             <em>NeurIPS</em>, 2023
             <br>
@@ -185,7 +185,7 @@
             <a href="https://arxiv.org/pdf/2312.05277.pdf">arXiv</a>
             <p></p>
             <p>
-                In this paper, we propose a physically plausible indoor 3D object insertion approach to automatically "copy" virtual objects and "paste" them into real scenes. The resulting objects in scenes generate have 3D bounding boxes with plausible physical location and illumination, augmenting existing indoor scene datasets such as SUNRGBD.
+                A physically plausible indoor 3D object insertion approach to automatically "copy" virtual objects and "paste" them into real scenes.
             </p>
         </td>
         </tr>
