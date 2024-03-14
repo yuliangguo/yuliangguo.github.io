@@ -22,10 +22,10 @@
                 <p class="name" style="text-align: center;">
                   Yuliang Guo
                 </p>
-                <p>I'm a research scientist at Bosch Research Center in Silican Valley, where I lead a small team that mostly works on 3D perception and interative AI systems.
+                <p>I'm a research scientist at Bosch Research Center in Silican Valley, where I lead a small team that mostly works on 3D vision and interative AI solutions.
                 </p>
                 <p>
-                  At Bosch, my work involves extensive research in computer vision and artificial intelligence, concentrating on achieving generalization across various hardware setups and embodiments.
+                    At Bosch, my work focuses on pioneering computer vision and AI research, aimed at enabling generalization across diverse hardware configurations and embodiments. My research has been integrated into several Bosch products or prototypes, such as assisted driving technologies, industrial augmented reality (AR) systems, and AI-powered indoor robotics.                
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:33yuliangguo@gmail.com">Email</a> &nbsp;/&nbsp;
@@ -45,11 +45,57 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  My research interests are centered on formulating generalized 3D vision solutions adaptable across various hardware configurations and embodiments. I am a firm proponent of the progressive development of vision system design, keeping pace with advancements in AI. My aim is to foster more intelligent interactions between humans and machines while upholding safety in the physical world.                </p>
+                  My research interests are centered on formulating generalized 3D perception methods adaptable across various embodiments, as well building interatable scene models from real world. My work aims to foster intelligent interactions between humans and AI while upholding safety in the physical world.                
+                </p>
               </td>
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+    <tr onmouseout="upnerf_stop()" onmouseover="upnerf_start()">
+        <td style="padding:20px;width:40%;vertical-align:middle">
+            <div class="one">
+            <div class="two" id='upnerf_image'><video  width=100% muted autoplay loop>
+            <source src="TODO" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/upnerf_demo.gif' width=100%>
+            </div>
+            <script type="text/javascript">
+            function upnerf_start() {
+                document.getElementById('upnerf_image').style.opacity = "1";
+            }
+    
+            function upnerf_stop() {
+                document.getElementById('upnerf_image').style.opacity = "0";
+            }
+            upnerf_stop()
+            </script>
+        </td>
+        <td style="padding:20px;width:60%;vertical-align:middle">
+            <a href="https://github.com/yuliangguo/nerf-auto-driving/">
+            <span class="papertitle">UPNeRF: A Unified Framework for Monocular 3D Object Reconstruction and Pose Estimation</span>
+            </a>
+            <br>
+            <strong>Yuliang Guo</strong>,
+            Abhinav Kumar,
+            Cheng Zhao,
+            Ruoyu Wang,
+            Xinyu Huang,
+            Liu Ren,
+            <br>
+            <em>arXiv</em>, 2024
+            <br>
+            <a href="https://github.com/yuliangguo/nerf-auto-driving">Github</a>
+            /
+            <a href="TODO">arXiv</a>
+            <p></p>
+            <p>
+                A monocular object reconstruction framework effectively integrating object pose estimation and NeRF-based reconstruction. A novel pose estimation is introduced to handle depth-scale ambiguity and cross-domain generalization.          
+            </p>
+        </td>
+        </tr>
+
 
     <tr onmouseout="seabird_stop()" onmouseover="seabird_start()">
         <td style="padding:20px;width:40%;vertical-align:middle">
@@ -90,7 +136,7 @@
             <a href="TODO">arXiv</a>
             <p></p>
             <p>
-                A method integrating bird-eye view segmentation into monolucar 3D detection. We mathematically prove that the dice loss leads to superior noise-robustness and model convergence for large objects compared to regression losses.
+                A mathematical framework to prove that the dice loss leads to superior noise-robustness and model convergence for large objects compared to regression losses. A monolucar 3D detection method integrated with bird-eye view segmentation. 
             </p>
         </td>
         </tr>
@@ -136,7 +182,7 @@
             <a href="TODO">arXiv</a>
             <p></p>
             <p>
-                An method, for the first time, tackles the task of completing the occluded scene surfaces, resulting in a complete 3D scene mesh.
+                The first neural reconstruction method able to complete the occluded surfaces in large scenes. A key enabler to build interatable environment from real world, empowering robotic reimforcement learning in handling domain gap.
             </p>
         </td>
         </tr>
