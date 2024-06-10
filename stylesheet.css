@@ -130,6 +130,14 @@ h2 {
   -webkit-transition: opacity .2s ease-in-out;
 }
 
-span.highlight {
+span.highlight1 {
   background-color: #ffffd0;
+}
+
+span.highlight2 {
+  background-color: #d0ebff;
+}
+
+span.highlight3 {
+  background-color: #e0ffd0;
 }
