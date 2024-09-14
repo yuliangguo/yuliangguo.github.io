@@ -52,28 +52,28 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-    <tr onmouseout="upnerf_stop()" onmouseover="upnerf_start()">
+    <tr onmouseout="supnerf_stop()" onmouseover="supnerf_start()">
         <td style="padding:20px;width:40%;vertical-align:middle">
             <div class="one">
-            <div class="two" id='upnerf_image'><video  width=100% muted autoplay loop>
+            <div class="two" id='supnerf_image'><video  width=100% muted autoplay loop>
             <source src="TODO" type="video/mp4">
             Your browser does not support the video tag.
             </video></div>
-            <img src='images/upnerf_demo.gif' width=95%>
+            <img src='images/supnerf_demo.gif' width=95%>
             </div>
             <script type="text/javascript">
-            function upnerf_start() {
-                document.getElementById('upnerf_image').style.opacity = "1";
+            function supnerf_start() {
+                document.getElementById('supnerf_image').style.opacity = "1";
             }
     
-            function upnerf_stop() {
-                document.getElementById('upnerf_image').style.opacity = "0";
+            function supnerf_stop() {
+                document.getElementById('supnerf_image').style.opacity = "0";
             }
-            upnerf_stop()
+            supnerf_stop()
             </script>
         </td>
         <td style="padding:20px;width:60%;vertical-align:middle">
-            <a href="https://yuliangguo.github.io/upnerf/">
+            <a href="https://yuliangguo.github.io/supnerf/">
             <span class="papertitle">SUP-NeRF: A Streamlined Unification of Pose Estimation and NeRF for Monocular 3D Object Reconstruction</span>
             </a>
             <br>
@@ -96,6 +96,96 @@
         </td>
         </tr>
 
+    <tr onmouseout="tclcgs_stop()" onmouseover="tclcgs_start()">
+        <td style="padding:20px;width:40%;vertical-align:middle">
+            <div class="one">
+            <div class="two" id='tclcgs_image'><video  width=100% muted autoplay loop>
+            <source src="TODO" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/tclcgs_teasor.png' width=100%>
+            </div>
+            <script type="text/javascript">
+            function tclcgs_start() {
+                document.getElementById('tclcgs_image').style.opacity = "1";
+            }
+    
+            function tclcgs_stop() {
+                document.getElementById('tclcgs_image').style.opacity = "0";
+            }
+            tclcgs_stop()
+            </script>
+        </td>
+        <td style="padding:20px;width:60%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2404.02410">
+            <span class="papertitle">TCLC-GS: Tightly Coupled LiDAR-Camera Gaussian Splatting for Autonomous Driving</span>
+            </a>
+            <br>
+            Cheng Zhao,
+            Su Sun,
+            Ruoyu Wang,
+            <strong>Yuliang Guo</strong>,
+            Jun-Jun Wan,
+            Zhou Huang,                
+            Xinyu Huang,
+            Yingjie Victor Chen,
+            Liu Ren,
+            <br>
+            <strong>ECCV 2024</strong>
+            <br>
+            [<a href="https://arxiv.org/abs/2404.02410">paper</a>]
+            [<a href="https://github.com/BoschRHI3NA/Video-Demo-ECCV24/tree/main">video demo</a>]
+            <p></p>
+            <p>
+                An advanced Gaussian Splatting method effectively fusing Lidar and surrounding camera views for autonomous driving. The method uniquely leverages an intermediate occ-tree feature volume before GS such that GS parameters can be initialized from feature-volume-generated 3D surface more effectively. 
+            </p>
+        </td>
+        </tr>
+
+    <tr onmouseout="iros24sd_stop()" onmouseover="iros24sd_start()">
+        <td style="padding:20px;width:40%;vertical-align:middle">
+            <div class="one">
+            <div class="two" id='iros24sd_image'><video  width=100% muted autoplay loop>
+            <source src="TODO" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='images/iros24sd_teasor.png' width=100%>
+            </div>
+            <script type="text/javascript">
+            function iros24sd_start() {
+                document.getElementById('iros24sd_image').style.opacity = "1";
+            }
+    
+            function iros24sd_stop() {
+                document.getElementById('iros24sd_image').style.opacity = "0";
+            }
+            iros24sd_stop()
+            </script>
+        </td>
+        <td style="padding:20px;width:60%;vertical-align:middle">
+            <a href="https://henryzhangzhy.github.io/sdhdmap/">
+            <span class="papertitle">Enhancing Online Road Network Perception and Reasoning with Standard Definition Maps</span>
+            </a>
+            <br>
+            Hengyuan Zhang,
+            David Paz,
+            <strong>Yuliang Guo</strong>,
+            Arun Das,
+            Xinyu Huang,
+            Karsten Haug,
+            Henrik I. Christensen,
+            Liu Ren,
+            <br>
+            <strong>IROS 2024</strong>
+            <br>
+            [<a href="https://www.arxiv.org/abs/2408.01471">paper</a>]
+            [<a href="https://henryzhangzhy.github.io/sdhdmap/">project page</a>]
+            <p></p>
+            <p>
+                An effective framework leveraging lightweight and scalable priors-Standard Definition (SD) maps in the estimation of online vectorized HD map representations. 
+            </p>
+        </td>
+        </tr>
 
     <tr onmouseout="seabird_stop()" onmouseover="seabird_start()">
         <td style="padding:20px;width:40%;vertical-align:middle">
