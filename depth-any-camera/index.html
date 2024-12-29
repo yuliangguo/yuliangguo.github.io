@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=0.2">
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Depth Any Camera">
+  <meta name="keywords" content="Monocular Depth Estimation">
+  <title>Depth Any Camera</title>
+
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="css/bulma.min.css">
+  <link rel="stylesheet" href="css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="css/bulma-slider.min.css">
+  <link rel="stylesheet" href="css/fontawesome.all.min.css">
+
+
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" href="img/Logo.jpg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="js/fontawesome.all.min.js"></script>
+  <script src="js/bulma-carousel.min.js"></script>
+  <script src="js/bulma-slider.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title"><img id="painting_icon" width="8%" src="img/logo.jpg" style="vertical-align: middle; margin-right: 0px; position: relative; top: -2px;"> Depth Any Camera</h1>
+          <h1 class="title is-2 publication-title">Zero-Shot Metric Depth Estimation from Any Camera</h1>
+
+          <div class="is-size-5 publication-authors">
+            <br>
+            <span class="author-block">
+              <a href="https://yuliangguo.github.io/">Yuliang Guo</a><sup>1*</sup></a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp  
+            </span>
+            <span class="author-block">
+              <a href="https://sparsh913.github.io/sparshgarg/">Sparsh Garg</a><sup>2&dagger;</sup></a>&nbsp</a>&nbsp</a>&nbsp
+            </span>
+            <span class="author-block">
+              <a href="https://miangoleh.github.io/">S. Mahdi H. Miangoleh</a><sup>3&dagger;</sup></a>&nbsp</a>&nbsp</a>&nbsp
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=cL4bNBwAAAAJ&hl=en">Xinyu Huang</a><sup>1</sup></a>&nbsp</a>&nbsp</a>&nbsp
+            </span>
+            <span class="author-block">
+              <a href="https://sites.google.com/site/liurenshomepage/">Liu Ren</a><sup>1</sup>  
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Bosch Research North America</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp </span>
+            <span class="author-block"><sup>2</sup>Carnegie Mellon University</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp </span>
+            <span class="author-block"><sup>3</sup>Simon Fraser University</span>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp </span>
+          </div>
+
+          <div class="is-size-6 publication-authors">
+            <span class="author-block">* Corresponding author</span> </a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp
+            <span class="author-block">&dagger; Work done during an internship at Bosch</span>
+          </div>
+
+          <!-- <div class="column has-text-centered">
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><b>CVPR 2024</b></span>
+            </div>
+          </div> -->
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="TODO" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="TODO" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/yuliangguo/depth_any_camera" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (Coming Soon)</span>
+                </a>
+              </span>
+              <!-- <span class="link-block">
+                <a href="https://huggingface.co/spaces/LiheYoung/Depth-Anything" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="far fa-images"></i>
+                  </span>
+                  <span>Demo</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://huggingface.co/spaces/LiheYoung/Depth-Anything/tree/main" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-share-square"></i>
+                  </span>
+                  <span>Model</span>
+                </a>
+              </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body is-centered">
+      <img id="teaser" width="75%" class="center" src="img/teaser.png"/>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h4 class="subtitle has-text-centered">
+        <div class="content has-text-justified"> 
+          <p>
+            <b>Depth Any Camera (DAC)</b> is a a novel zero-shot metric depth estimation framework that extends a perspective-trained model to handle any type of camera with varying FoVs effectively. 
+            Notably, DAC can be <b>trained exclusively on perspective images</b>, yet it generalizes seamlessly to <b>fisheye</b> and <b>360</b> cameras without requiring specialized training data. Key features includes:
+            <ul type="1">
+              <li><b>Zero-shot metric</b> depth estimation on <b>fisheye</b> and <b>360</b> images, significantly outperforming <a href="https://jugghm.github.io/Metric3Dv2/" target="_blank">Metric3D-v2</a> and <a href="https://github.com/lpiccinelli-eth/UniDepth/tree/main" target="_blank">UniDepth</a></span></li>
+              <li>Geometry-based training framework <b>adaptable to any network archetecture</b>, extendable to <b>other 3D perception tasks</b>.</span></li>
+            </ul>
+          </p>
+          <p>
+          </p>
+        </div>
+      </h4>
+      
+    </div>
+  </div>
+</section>
+
+
+<section class="section"  style="margin-top: 0; padding-top: 50px;">
+    <h2 class="title is-4" style="text-align: center;">Depth Visualization on Videos</h2>
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <p>
+          <b>Note:</b> Depth Any Camera is an image-based depth estimation method, we use video demos just to better exhibit our superiority. For more image-level visualizations, please refer to our paper.
+          </p><br>
+  
+          <video poster="" id="ade" autoplay controls muted loop playsinline height="10%">
+            <source src="./videos/demo1.mov"
+                    type="video/mp4">
+          </video>
+          <!-- <video poster="" id="ade" autoplay controls muted loop playsinline height="10%">
+            <source src="./videos/demo2.mov"
+                    type="video/mp4">
+          </video> -->
+          <video poster="" id="ade" autoplay controls muted loop playsinline height="10%">
+            <source src="./videos/demo9.mov"
+                    type="video/mp4">
+          </video>
+          <video poster="" id="ade" autoplay controls muted loop playsinline height="10%">
+            <source src="./videos/demo7.mov"
+                    type="video/mp4">
+          </video>
+          <video poster="" id="ade" autoplay controls muted loop playsinline height="10%">
+            <source src="./videos/demo3.mov"
+                    type="video/mp4">
+          </video>
+          <video poster="" id="ade" autoplay controls muted loop playsinline height="10%">
+            <source src="./videos/demo8.mov"
+                    type="video/mp4">
+          </video>
+          <video poster="" id="ade" autoplay controls muted loop playsinline height="10%">
+            <source src="./videos/demo4.mov"
+                    type="video/mp4">
+          </video>      
+        </div>
+      </div>
+    </div>
+    <div class="video-grid">
+      <video poster="" id="ade" autoplay controls muted loop playsinline>
+          <source src="./videos/demo5.mov" type="video/mp4">
+      </video>
+      <video poster="" id="ade" autoplay controls muted loop playsinline>
+        <source src="./videos/demo6.mov" type="video/mp4">
+    </video>
+    </div>
+  </section>
+
+
+<section class="hero is-small" style="margin-top: 30px; padding-top: 0px;">
+  <h2 class="title is-4" style="text-align: center;">Comparison between Depth Any Camera and Metric3D-v2, UniDepth</h2>
+  <div class="hero-body">
+    
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <img src="img/visual_compare_set1.png" alt="Steve GIF" width="100%">
+        </div>
+
+        <div class="item item-steve">
+            <img src="img/visual_compare_set1.png" alt="Steve GIF" width="100%">
+        </div>
+
+        <div class="item item-steve">
+            <img src="img/visual_compare_set1.png" alt="Steve GIF" width="100%">
+        </div>
+
+        <div class="item item-steve">
+            <img src="img/visual_compare_set1.png" alt="Steve GIF" width="100%">
+        </div>
+
+        <div class="item item-steve">
+            <img src="img/visual_compare_set1.png" alt="Steve GIF" width="100%">
+        </div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+<!-- <section class="section" style="background-color:#efeff081"> -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-4">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Accurate metric depth estimation from monocular cameras is essential for applications such as autonomous driving, AR/VR, and robotics. While recent depth estimation methods demonstrate strong zero-shot generalization, achieving accurate metric depth across diverse camera types—particularly those with large fields of view (FoV) like fisheye and 360<sup>o</sup> cameras—remains challenging. This paper introduces <b>Depth Any Camera (DAC)</b>, a novel zero-shot metric depth estimation framework that extends a perspective-trained model to handle any type of camera with varying FoVs effectively. Notably, DAC can be trained exclusively on perspective images, yet it generalizes seamlessly to fisheye and 360<sup>o</sup> cameras without requiring specialized training data. DAC leverages Equi-Rectangular Projection (ERP) as a unified image representation, enabling consistent processing of images with diverse FoVs. Key components include an efficient pitch-aware Image-to-ERP conversion for seamless online augmentation in ERP space, a FoV alignment operation to support effective training across a broad range of FoVs, and multi-resolution data augmentation to address resolution discrepancies between training and testing. DAC achieves state-of-the-art zero-shot metric depth estimation, improving &delta;<sub>1</sub> accuracy by up to 50% on multiple indoor fisheye and 360<sup>o</sup> datasets comparing to prior depth foundation models, demonstrating robust generalization across camera types while relying only on perspective training data.          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-4" style="text-align: center;">Data Coverage</h2>
+          <div class="content has-text-justified">
+            <p>
+              Our Depth Any Camera is trained on a combination set of 3 labeled datasets (670k images) for indoor model and a combination of 2 datasets (130k) for outdoor model. Multiple two 360 datasets and two fisheye datasets are used for testing.
+            </p>
+          </div>
+
+          <div class="image-area">
+            <img src="img/table_data_coverage.png" alt="pipeline" width="100%" class="center">
+          </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-4" style="text-align: center;">Zero-shot Metric Depth Estimation</h2>
+          <div class="content has-text-justified">
+            <p>
+              Depth Any Camera is <b>significantly better</b> than the previously best <b>metric</b> MDE models Metric3D-v2 and  UniDepth in generalization to large FoV camera images given <b>significantly smaller training dataset and model size</b>.
+            </p>
+          </div>
+
+          <div class="image-area">
+            <img src="img/table_compare_sota.png" alt="pipeline" width="100%">
+          </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-4" style="text-align: center;">Framework</h2>
+        <div class="content has-text-justified">
+          <p>
+            The framework of Depth Any Camera is shown below. Our DAC framework converts data from any camera type into a canonical ERP space, allowing a model trained on perspective images to process large FoV testing data in a consistent space for metric depth inference. During training, an efficient Image-to-ERP conversion is developed to enable online data augmentation directly in the ERP space, an approach widely proven effective with perspective images. With the proposed FoV-Align process, highly varied FoV data is adapted to a single predefined ERP patch size, maximizing training efficiency. During inference, images from any camera type can be converted to ERP space for metric depth estimation, with an optional step to map the ERP output back to the original image space for visualization. 
+          </p>
+        </div>
+
+        <div class="image-area">
+          <img src="img/pipeline.png" alt="pipeline" width="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section pt-0" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-4">Citation</h2>
+    <pre class="selectable"><code>@inproceedings{depthanything,
+  title={Depth Any Camera: Zero-Shot Metric Depth Estimation from Any Camera},
+  author={Yuliang Guo and Sparsh Garg and S. Mahdi H. Miangoleh and Xinyu Huang and Liu Ren},
+  booktitle={arXiv},
+  year={2025}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://arxiv.org/pdf/2401.10891.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/yuliangguo/depth_any_camera" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="content">
+        <p>
+          The template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
