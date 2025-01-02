@@ -68,13 +68,13 @@
           <div class="is-size-5 publication-authors">
             <br>
             <span class="author-block">
-              <a href="https://yuliangguo.github.io/">Yuliang Guo</a><sup>1*</sup></a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp  
+              <a href="https://yuliangguo.github.io/">Yuliang Guo</a><sup>1*&dagger;</sup></a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp  
             </span>
             <span class="author-block">
               <a href="https://sparsh913.github.io/sparshgarg/">Sparsh Garg</a><sup>2&dagger;</sup></a>&nbsp</a>&nbsp</a>&nbsp
             </span>
             <span class="author-block">
-              <a href="https://miangoleh.github.io/">S. Mahdi H. Miangoleh</a><sup>3&dagger;</sup></a>&nbsp</a>&nbsp</a>&nbsp
+              <a href="https://miangoleh.github.io/">S. Mahdi H. Miangoleh</a><sup>3</sup></a>&nbsp</a>&nbsp</a>&nbsp
             </span>
             <span class="author-block">
               <a href="https://scholar.google.com/citations?user=cL4bNBwAAAAJ&hl=en">Xinyu Huang</a><sup>1</sup></a>&nbsp</a>&nbsp</a>&nbsp
@@ -92,7 +92,7 @@
 
           <div class="is-size-6 publication-authors">
             <span class="author-block">* Corresponding author</span> </a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp</a>&nbsp
-            <span class="author-block">&dagger; Work done during an internship at Bosch</span>
+            <span class="author-block">&dagger; Equal technical contribution</span>
           </div>
 
           <!-- <div class="column has-text-centered">
@@ -130,24 +130,6 @@
                   <span>Code (Coming Soon)</span>
                 </a>
               </span>
-              <!-- <span class="link-block">
-                <a href="https://huggingface.co/spaces/LiheYoung/Depth-Anything" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="far fa-images"></i>
-                  </span>
-                  <span>Demo</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://huggingface.co/spaces/LiheYoung/Depth-Anything/tree/main" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fas fa-share-square"></i>
-                  </span>
-                  <span>Model</span>
-                </a>
-              </span> -->
             </div>
           </div>
         </div>
@@ -275,7 +257,7 @@
         <h2 class="title is-4" style="text-align: center;">Data Coverage</h2>
           <div class="content has-text-justified">
             <p>
-              Our Depth Any Camera is trained on a combination set of 3 labeled datasets (670k images) for indoor model and a combination of 2 datasets (130k) for outdoor model. Multiple two 360 datasets and two fisheye datasets are used for testing.
+              DAC is trained on a combination set of 3 labeled datasets (670k images) for indoor model and a combination of 2 datasets (130k) for outdoor model. Two 360 datasets and two fisheye datasets are used for zero-shot testing.
             </p>
           </div>
 
@@ -293,7 +275,7 @@
         <h2 class="title is-4" style="text-align: center;">Zero-shot Metric Depth Estimation</h2>
           <div class="content has-text-justified">
             <p>
-              Depth Any Camera is <b>significantly better</b> than the previously best <b>metric</b> MDE models Metric3D-v2 and  UniDepth in generalization to large FoV camera images given <b>significantly smaller training dataset and model size</b>.
+              Depth Any Camera (DAC) performs <b>significantly better</b> than the previously SoTA <b>metric</b> depth estimation models Metric3D-v2 and  UniDepth in zero-shot generalization to large FoV camera images given <b>significantly smaller training dataset and model size</b>.
             </p>
           </div>
 
@@ -326,7 +308,7 @@
 <section class="section pt-0" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title is-4">Citation</h2>
-    <pre class="selectable"><code>@inproceedings{depthanything,
+    <pre class="selectable"><code>@inproceedings{guo2025depthanycamera,
   title={Depth Any Camera: Zero-Shot Metric Depth Estimation from Any Camera},
   author={Yuliang Guo and Sparsh Garg and S. Mahdi H. Miangoleh and Xinyu Huang and Liu Ren},
   booktitle={arXiv},
