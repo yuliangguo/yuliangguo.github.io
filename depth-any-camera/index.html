@@ -154,12 +154,13 @@
       <h4 class="subtitle has-text-centered">
         <div class="content has-text-justified"> 
           <p>
-            <b>Depth Any Camera (DAC)</b> is a a novel zero-shot metric depth estimation framework that extends a perspective-trained model to handle any type of camera with varying FoVs effectively. 
-            Notably, DAC can be <b>trained exclusively on perspective images</b>, yet it generalizes seamlessly to <b>fisheye</b> and <b>360</b> cameras without requiring specialized training data. Key features includes:
+            <b>Depth Any Camera (DAC)</b> is a powerful Zero-Shot Metric Depth Estimation framework that extends a perspective-trained model to handle any type of camera with varying FoVs effectively. 
+            Remarkably, DAC can be <b>trained exclusively on perspective images</b>, yet it generalizes seamlessly to <b>fisheye</b> and <b>360</b> cameras without requiring specialized training data. Key features includes:
             <ul type="1">
               <li><b>Zero-shot metric</b> depth estimation on <b>fisheye</b> and <b>360</b> images, significantly outperforming prior metric depth SoTA <a href="https://jugghm.github.io/Metric3Dv2/" target="_blank">Metric3D-v2</a> and <a href="https://github.com/lpiccinelli-eth/UniDepth/tree/main" target="_blank">UniDepth</a></span></li>
-              <li>Geometry-based training framework <b>adaptable to any network archetecture</b>, extendable to <b>other 3D perception tasks</b>.</span></li>
+              <li>Geometry-focused training framework <b>adaptable to any network archetecture</b>, extendable to <b>other 3D perception tasks</b></span></li>
             </ul>
+            Tired of collecting new data and annotations for every new camera type? DAC allows you to leverage existing data, ensuring that <b>every piece of previously collected 3D data valuable</b>, regardless of the camera type used in a new application.
           </p>
           <p>
           </p>
@@ -172,7 +173,7 @@
 
 
 <section class="section"  style="margin-top: 0; padding-top: 50px;">
-    <h2 class="title is-4" style="text-align: center;">Depth Visualization on Fisheye Videos and 360<sup>o</sup> Singe-View 3D Reconstruction</h2>
+    <h2 class="title is-4" style="text-align: center;"> Demonstrations on Fisheye Videos and 360<sup>o</sup> Singe-View 3D Reconstruction</h2>
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column is-full-width">
@@ -204,7 +205,7 @@
 
 
 <section class="hero is-small" style="margin-top: 30px; padding-top: 0px;">
-  <h2 class="title is-4" style="text-align: center;">Visual comparison between Depth Any Camera (DAC), <a href="https://jugghm.github.io/Metric3Dv2/" target="_blank">Metric3D-v2</a> and <a href="https://github.com/lpiccinelli-eth/UniDepth/tree/main" target="_blank">UniDepth</a></h2>
+  <h2 class="title is-4" style="text-align: center;">Visual comparison to <a href="https://jugghm.github.io/Metric3Dv2/" target="_blank">Metric3D-v2</a> and <a href="https://github.com/lpiccinelli-eth/UniDepth/tree/main" target="_blank">UniDepth</a></h2>
   <div class="hero-body">
     
     <div class="container">
@@ -240,7 +241,12 @@
         <h2 class="title is-4">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Accurate metric depth estimation from monocular cameras is essential for applications such as autonomous driving, AR/VR, and robotics. While recent depth estimation methods demonstrate strong zero-shot generalization, achieving accurate metric depth across diverse camera types—particularly those with large fields of view (FoV) like fisheye and 360<sup>o</sup> cameras—remains challenging. This paper introduces <b>Depth Any Camera (DAC)</b>, a novel zero-shot metric depth estimation framework that extends a perspective-trained model to handle any type of camera with varying FoVs effectively. Notably, DAC can be trained exclusively on perspective images, yet it generalizes seamlessly to fisheye and 360<sup>o</sup> cameras without requiring specialized training data. DAC leverages Equi-Rectangular Projection (ERP) as a unified image representation, enabling consistent processing of images with diverse FoVs. Key components include an efficient pitch-aware Image-to-ERP conversion for seamless online augmentation in ERP space, a FoV alignment operation to support effective training across a broad range of FoVs, and multi-resolution data augmentation to address resolution discrepancies between training and testing. DAC achieves state-of-the-art zero-shot metric depth estimation, improving &delta;<sub>1</sub> accuracy by up to 50% on multiple indoor fisheye and 360<sup>o</sup> datasets comparing to prior depth foundation models, demonstrating robust generalization across camera types while relying only on perspective training data.          </p>
+            While recent depth foundation models exhibit strong zero-shot generalization, achieving accurate metric depth across diverse camera types—particularly those with large fields of view (FoV) such as fisheye and 360-degree cameras—remains a significant challenge.
+            This paper presents <strong>Depth Any Camera (DAC)</strong>, a powerful zero-shot metric depth estimation framework that extends a perspective-trained model to effectively handle cameras with varying FoVs. The framework is designed to ensure that all existing 3D data can be leveraged, regardless of the specific camera types used in new applications.
+            Remarkably, DAC is trained exclusively on perspective images but generalizes seamlessly to fisheye and 360-degree cameras without the need for specialized training data. DAC employs Equi-Rectangular Projection (ERP) as a unified image representation, enabling consistent processing of images with diverse FoVs. 
+            Its key components include a pitch-aware Image-to-ERP conversion for efficient online augmentation in ERP space, a FoV alignment operation to support effective training across a wide range of FoVs, and multi-resolution data augmentation to address resolution disparities between training and testing.
+            DAC achieves state-of-the-art zero-shot metric depth estimation, improving delta-1 accuracy by up to 50% on multiple fisheye and 360-degree datasets compared to prior metric depth foundation models, demonstrating robust generalization across camera types.
+          </p>
         </div>
       </div>
     </div>
