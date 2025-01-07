@@ -52,6 +52,50 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+
+    <tr onmouseout="depth_any_camera_stop()" onmouseover="depth_any_camera_start()">
+        <td style="padding:20px;width:40%;vertical-align:middle">
+            <div class="one">
+            <div class="two" id='depth_any_camera_image'><video  width=100% muted autoplay loop>
+            <source src="depth-any-camera/img/videos/video_scannet++_1.mov" type="video/mp4">
+            Your browser does not support the video tag.
+            </video></div>
+            <img src='depth-any-camera/img/teaser.png' width=95%>
+            </div>
+            <script type="text/javascript">
+            function depth_any_camera_start() {
+                document.getElementById('depth_any_camera_image').style.opacity = "1";
+            }
+    
+            function depth_any_camera_stop() {
+                document.getElementById('depth_any_camera_image').style.opacity = "0";
+            }
+            depth_any_camera_stop()
+            </script>
+        </td>
+        <td style="padding:20px;width:60%;vertical-align:middle">
+            <a href="https://yuliangguo.github.io/depth_any_camera/">
+            <span class="papertitle">Depth Any Camera: Zero-Shot Metric Depth Estimation from Any Camera </span>
+            </a>
+            <br>
+            <strong>Yuliang Guo</strong>,
+            Sparsh Garg,
+            S. Mahdi H. Miangoleh,
+            Xinyu Huang,
+            Liu Ren,
+            <br>
+            arXiv 2025
+            <br>
+            [<a href="https://arxiv.org/abs/2501.02464">paper</a>]
+            <!-- [<a href="https://github.com/yuliangguo/nerf-auto-driving">code</a>] -->
+            [<a href="https://yuliangguo.github.io/depth-any-camera/">project page</a>]
+            [<a href="https://github.com/yuliangguo/depth_any_camera">code</a>]
+            <p></p>
+            <p> 
+                We introduce Depth Any Camera (DAC), a framework enabling superior zero-shot generalization in metric depth estimation for large FoV cameras, including fisheye and 360°. Tired of collecting specific data for spectic cameras? DAC maximizes the utility of existing 3D data for training, regardless of the specific camera types used in new applications. </p>
+        </td>
+        </tr>
+
     <tr onmouseout="supnerf_stop()" onmouseover="supnerf_start()">
         <td style="padding:20px;width:40%;vertical-align:middle">
             <div class="one">
@@ -225,6 +269,7 @@
             <br>
             [<a href="https://arxiv.org/abs/2403.20318">paper</a>]
             [<a href="https://github.com/abhi1kumar/SeaBird">code</a>]
+            [<a href="http://cvlab.cse.msu.edu/project-seabird.html">project page</a>]
             <p></p>
             <p>
                 A mathematical framework to prove that the dice loss leads to superior noise-robustness and model convergence for large objects compared to regression losses. A flexible monocular 3D detection pipeline integrated with bird-eye view segmentation. 
