@@ -95,11 +95,11 @@
             <span class="author-block">&dagger; Equal technical contribution</span>
           </div>
 
-          <!-- <div class="column has-text-centered">
-            <div class="is-size-5 publication-authors">
-              <span class="author-block"><b>CVPR 2024</b></span>
+          <div class="column has-text-centered">
+            <div class="is-size-4 publication-authors">
+              <span class="author-block"><b>CVPR 2025</b></span>
             </div>
-          </div> -->
+          </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
@@ -129,6 +129,22 @@
                   </span>
                   <span>Code</span>
                 </a>
+              </span>
+              <span class="link-block">
+                <a href="https://huggingface.co/yuliangguo/depth-any-camera/blob/main/zipnerf_dac_swinl_indoor_2025_01.zip" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-database"></i>
+                  </span>
+                  <span>Fisheye Depth ZipNeRF</span>
+                </a>
+                <a href="https://huggingface.co/yuliangguo/depth-any-camera/blob/main/scannetpp_dac_swinl_indoor_2025_01.zip" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-database"></i>
+                </span>
+                <span>Fisheye Depth ScanNet++</span>
+              </a>
               </span>
             </div>
           </div>
@@ -189,12 +205,11 @@
             <source src="img/videos/video_scannet++_2.mov"
                     type="video/mp4">
           </video>
-        </video>
-        <video poster="" id="ade" autoplay controls muted loop playsinline height="100%">
-          <source src="img/videos/video_matterport3d_1.mov"
-                  type="video/mp4">
-        </video>
-        <video poster="" id="ade" autoplay controls muted loop playsinline height="100%">
+          <video poster="" id="ade" autoplay controls muted loop playsinline height="100%">
+            <source src="img/videos/video_matterport3d_1.mov"
+                    type="video/mp4">
+          </video>
+          <video poster="" id="ade" autoplay controls muted loop playsinline height="100%">
             <source src="img/videos/video_matterport3d_2.mov"
                     type="video/mp4">
           </video>
@@ -202,6 +217,28 @@
       </div>
     </div>
   </section>
+
+
+<section class="section"  style="margin-top: 0; padding-top: 50px;">
+  <h2 class="title is-4" style="text-align: center;"> Fisheye Depth Estimation on ZipNeRF for Neural Reconstruction</h2>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <p>
+            To support the development of 3D Neural Reconstruction methods such as NeRF and Gaussian Splatting on fisheye inputs, we provide DAC's depth estimation results on ZipNeRF for fisheye images. 
+            The depth maps are available for download at <a href="https://huggingface.co/yuliangguo/depth-any-camera/blob/main/zipnerf_dac_swinl_indoor_2025_01.zip" target="_blank">Fisheye Depth ZipNeRF</a> and <a href="https://huggingface.co/yuliangguo/depth-any-camera/blob/main/scannetpp_dac_swinl_indoor_2025_01.zip" target="_blank">Fisheye Depth ScanNet++</a>.
+            Emerging neural reconstruction methods capable of handling large FoV inputs, such as <a href="https://smerf-3d.github.io/" target="_blank">SMERF</a>, <a href="https://github.com/zmliao/Fisheye-GS" target="_blank">Fisheye-GS</a>, and <a href="https://github.com/half-potato/ever_training" target="_blank">EVER</a>, are expected to benefit from the fisheye depth prior.
+        </p><br>
+        <div class="image-area">
+          <img src="img/videos/zipnerf_fisheye_alameda.gif" width="100%">
+        </div>
+        <div class="image-area">
+          <img src="img/videos/zipnerf_fisheye_berlin.gif" width="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 <section class="hero is-small" style="margin-top: 30px; padding-top: 0px;">
@@ -229,7 +266,6 @@
     
   </div>
 </section>
-
 
 
 <!-- <section class="section" style="background-color:#efeff081"> -->
