@@ -229,11 +229,11 @@
             The depth maps are available for download at <a href="https://huggingface.co/yuliangguo/depth-any-camera/blob/main/zipnerf_dac_swinl_indoor_2025_01.zip" target="_blank">Fisheye Depth ZipNeRF</a> and <a href="https://huggingface.co/yuliangguo/depth-any-camera/blob/main/scannetpp_dac_swinl_indoor_2025_01.zip" target="_blank">Fisheye Depth ScanNet++</a>.
             Emerging neural reconstruction methods capable of handling large FoV inputs, such as <a href="https://smerf-3d.github.io/" target="_blank">SMERF</a>, <a href="https://github.com/zmliao/Fisheye-GS" target="_blank">Fisheye-GS</a>, and <a href="https://github.com/half-potato/ever_training" target="_blank">EVER</a>, are expected to benefit from the fisheye depth prior.
         </p><br>
-        <div class="image-area">
-          <img src="img/videos/zipnerf_fisheye_alameda.gif" width="100%">
+        <div class="image-area" style="text-align: center;">
+          <img src="img/videos/zipnerf_fisheye_alameda.gif" width="80%">
         </div>
-        <div class="image-area">
-          <img src="img/videos/zipnerf_fisheye_berlin.gif" width="100%">
+        <div class="image-area" style="text-align: center;">
+          <img src="img/videos/zipnerf_fisheye_berlin.gif" width="80%">
         </div>
       </div>
     </div>
@@ -280,8 +280,8 @@
             While recent depth foundation models exhibit strong zero-shot generalization, achieving accurate metric depth across diverse camera types—particularly those with large fields of view (FoV) such as fisheye and 360-degree cameras—remains a significant challenge.
             This paper presents <strong>Depth Any Camera (DAC)</strong>, a powerful zero-shot metric depth estimation framework that extends a perspective-trained model to effectively handle cameras with varying FoVs. The framework is designed to ensure that all existing 3D data can be leveraged, regardless of the specific camera types used in new applications.
             Remarkably, DAC is trained exclusively on perspective images but generalizes seamlessly to fisheye and 360-degree cameras without the need for specialized training data. DAC employs Equi-Rectangular Projection (ERP) as a unified image representation, enabling consistent processing of images with diverse FoVs. 
-            Its key components include a pitch-aware Image-to-ERP conversion for efficient online augmentation in ERP space, a FoV alignment operation to support effective training across a wide range of FoVs, and multi-resolution data augmentation to address resolution disparities between training and testing.
-            DAC achieves state-of-the-art zero-shot metric depth estimation, improving delta-1 accuracy by up to 50% on multiple fisheye and 360-degree datasets compared to prior metric depth foundation models, demonstrating robust generalization across camera types.
+            Its key components include a <b>pitch-aware Image-to-ERP conversion</b> for efficient online augmentation in ERP space, a <b>FoV alignment</b> operation to support effective training across a wide range of FoVs, and multi-resolution data augmentation to address resolution disparities between training and testing.
+            DAC achieves state-of-the-art zero-shot metric depth estimation, improving delta-1 accuracy by up to <b>50%</b> on multiple fisheye and 360-degree datasets compared to prior metric depth foundation models, demonstrating robust generalization across camera types.
           </p>
         </div>
       </div>
@@ -334,7 +334,12 @@
         <h2 class="title is-4" style="text-align: center;">Framework</h2>
         <div class="content has-text-justified">
           <p>
-            The framework of Depth Any Camera is shown below. Our DAC framework converts data from any camera type into a canonical ERP space, allowing a model trained on perspective images to process large FoV testing data in a consistent space for metric depth inference. During training, an efficient Image-to-ERP conversion is developed to enable online data augmentation directly in the ERP space, an approach widely proven effective with perspective images. With the proposed FoV-Align process, highly varied FoV data is adapted to a single predefined ERP patch size, maximizing training efficiency. During inference, images from any camera type can be converted to ERP space for metric depth estimation, with an optional step to map the ERP output back to the original image space for visualization. 
+            The framework of Depth Any Camera is shown below. Our DAC framework converts data from any camera type into a canonical ERP space, enabling
+            a model trained solely on perspective images to process large-FoV test data consistently for metric depth estimation. During training, we
+            introduce an effective <b>pitch-aware Image-to-ERP conversion</b> with online data augmentation to simulate high-distortion regions unique to
+            large-FoV images. The proposed <b>FoV-Align</b> process normalizes diverse-FoV data to a predefined ERP patch size, maximizing training
+            efficiency. During inference, images from any camera type are converted into ERP space for depth estimation, with an optional step to map
+            the ERP output back to the original image space for visualization.
           </p>
         </div>
 
@@ -353,7 +358,7 @@
     <pre class="selectable"><code>@inproceedings{guo2025depthanycamera,
   title={Depth Any Camera: Zero-Shot Metric Depth Estimation from Any Camera},
   author={Yuliang Guo and Sparsh Garg and S. Mahdi H. Miangoleh and Xinyu Huang and Liu Ren},
-  booktitle={arXiv},
+  booktitle={CVPR},
   year={2025}
 }</code></pre>
   </div>
