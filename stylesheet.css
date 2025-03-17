@@ -141,3 +141,8 @@ span.highlight2 {
 span.highlight3 {
   background-color: #e0ffd0;
 }
+
+.selected-button {
+  text-decoration: underline;
+  font-weight: bold;
+}

@@ -22,10 +22,10 @@
                 <p class="name" style="text-align: center;">
                   Yuliang Guo
                 </p>
-                <p>I'm a Lead (Staff) Research Scientist at Bosch AI Research Center at Silicon Valley, where I lead a team that works on 3D vision and interactive AI solutions.
+                <p>I'm a Lead (Staff) Research Scientist at Bosch AI Research Center at Silicon Valley, where I lead a team that works on 3D vision and interactive spatial AI solutions.
                 </p>
                 <p>
-                    At Bosch, my work focuses on pioneering computer vision and AI research, aimed at enabling generalization across diverse hardware configurations and embodiments. My research has been integrated into several Bosch products or prototypes, such as assisted driving technologies, industrial augmented reality (AR) systems, and AI-powered indoor robotics.                
+                    At Bosch, my work focuses on pioneering computer vision and AI research, aimed at enabling generalization across diverse hardware configurations and embodiments. My research has been integrated into multiple Bosch products or prototypes, such as assisted driving technologies, industrial augmented reality (AR) systems, and AI-powered indoor robotics.                
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:33yuliangguo@gmail.com">Email</a> &nbsp;/&nbsp;
@@ -45,698 +45,851 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                  My recent research interests are centered on formulating active 3D perception methods adaptable across various embodiments, as well reconstructing interactable scene models from real world. My work aims to foster intelligent interactions between humans and AI while upholding safety in the physical world. 
+                  My recent research interests are centered on formulating active 3D perception methods adaptable across various embodiments, as well reconstructing interactable scene models from real world. My work aims to foster intelligent interactions between human and physical AI while upholding safety in the physical world. 
                 </p>
               </td>
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+        <tbody>
+            <tr>
+                <td style="padding:20px;width:100%;vertical-align:middle">
+                    <h2>Publications <span style="font-size: 14px;">
+                        (<a href="#" id="show-selected">show selected</a> / 
+                         <a href="#" id="show-all">show all by date</a>)
+                    </span></h2>
+                </td>
+            </tr>
+        </tbody>
+    </table>
 
-    <tr onmouseout="depth_any_camera_stop()" onmouseover="depth_any_camera_start()">
-        <td style="padding:20px;width:40%;vertical-align:middle">
-            <div class="one">
-            <div class="two" id='depth_any_camera_image'><video  width=100% muted autoplay loop>
-            <source src="depth-any-camera/img/videos/video_scannet++_1.mov" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
-            <img src='depth-any-camera/img/teaser.png' width=95%>
-            </div>
-            <script type="text/javascript">
-            function depth_any_camera_start() {
-                document.getElementById('depth_any_camera_image').style.opacity = "1";
-            }
-    
-            function depth_any_camera_stop() {
-                document.getElementById('depth_any_camera_image').style.opacity = "0";
-            }
-            depth_any_camera_stop()
-            </script>
-        </td>
-        <td style="padding:20px;width:60%;vertical-align:middle">
-            <a href="https://yuliangguo.github.io/depth-any-camera/">
-            <span class="papertitle">Depth Any Camera: Zero-Shot Metric Depth Estimation from Any Camera </span>
-            </a>
-            <br>
-            <strong>Yuliang Guo</strong>,
-            Sparsh Garg,
-            S. Mahdi H. Miangoleh,
-            Xinyu Huang,
-            Liu Ren,
-            <br>
-            <strong>CVPR 2025</strong>
-            <br>
-            [<a href="https://arxiv.org/abs/2501.02464">paper</a>]
-            <!-- [<a href="https://github.com/yuliangguo/nerf-auto-driving">code</a>] -->
-            [<a href="https://yuliangguo.github.io/depth-any-camera/">project page</a>]
-            [<a href="https://github.com/yuliangguo/depth_any_camera">code</a>]
-            <p></p>
-            <p> 
-                We introduce Depth Any Camera (DAC), a framework enabling superior zero-shot generalization in metric depth estimation for large FoV cameras, including fisheye and 360°. Tired of collecting new data for specific cameras? DAC maximizes the utility of every existing 3D data for training, regardless of the specific camera types used in new applications. </p>
-        </td>
-        </tr>
+    <table id="publications-container" style="width:100%;border:0px;">
+        <tbody>
+            <tr onmouseout="online_lang_splat_stop()" onmouseover="online_lang_splat_start()" class="publication selected">
+                <td style="padding:20px;width:40%;vertical-align:middle">
+                    <div class="one">
+                    <div class="two" id='online_lang_splat_image'>
+                        <iframe width="100%" height="240" 
+                            src="https://www.youtube.com/embed/GIldru2006k" 
+                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <img src='images/langslam_teasor.gif' width=85%>
+                    </div>
+                    <script type="text/javascript">
+                    function online_lang_splat_start() {
+                        document.getElementById('online_lang_splat_image').style.opacity = "1";
+                    }
+            
+                    function online_lang_splat_stop() {
+                        document.getElementById('online_lang_splat_image').style.opacity = "0";
+                    }
+                    online_lang_splat_stop()
+                    </script>
+                </td>
+                <td style="padding:20px;width:60%;vertical-align:middle">
+                    <a href="https://saimouli.github.io/onlineLang/">
+                    <span class="papertitle">Online Language Splatting </span>
+                    </a>
+                    <br>
+                    Saimouli Katragadda,
+                    Cho-Ying Wu,
+                    <strong>Yuliang Guo</strong><sup>&dagger;</sup>,
+                    Xinyu Huang,
+                    Guoquan Huang,
+                    Liu Ren,
+                    <br>
+                    ArXiv 2025
+                    <br>
+                    [<a href="https://arxiv.org/abs/2503.09447">paper</a>]
+                    [<a href="https://saimouli.github.io/onlineLang/">project page</a>]
+                    [<a href="https://saimouli.github.io/onlineLang/">code</a>]
+                    <p></p>
+                    <p> 
+                        Online Language Splatting is the first method to integrate CLIP feature mapping with Gaussian Splatting in a fully online system. It introduces a high-resolution CLIP embedding module and online compressor learning to generate dense language maps at 40+ FPS while retaining open-vocabulary capability for accuracy query-based human interaction.
+                    </p>
+                </td>
+            </tr>
+            <tr onmouseout="depth_any_camera_stop()" onmouseover="depth_any_camera_start()" class="publication selected">
+                <td style="padding:20px;width:40%;vertical-align:middle">
+                    <div class="one">
+                    <div class="two" id='depth_any_camera_image'><video  width=100% muted autoplay loop>
+                    <source src="depth-any-camera/img/videos/video_scannet++_1.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <img src='depth-any-camera/img/teaser.png' width=95%>
+                    </div>
+                    <script type="text/javascript">
+                    function depth_any_camera_start() {
+                        document.getElementById('depth_any_camera_image').style.opacity = "1";
+                    }
+            
+                    function depth_any_camera_stop() {
+                        document.getElementById('depth_any_camera_image').style.opacity = "0";
+                    }
+                    depth_any_camera_stop()
+                    </script>
+                </td>
+                <td style="padding:20px;width:60%;vertical-align:middle">
+                    <a href="https://yuliangguo.github.io/depth-any-camera/">
+                    <span class="papertitle">Depth Any Camera: Zero-Shot Metric Depth Estimation from Any Camera </span>
+                    </a>
+                    <br>
+                    <strong>Yuliang Guo</strong>,
+                    Sparsh Garg,
+                    S. Mahdi H. Miangoleh,
+                    Xinyu Huang,
+                    Liu Ren,
+                    <br>
+                    <strong>CVPR 2025</strong>
+                    <br>
+                    [<a href="https://arxiv.org/abs/2501.02464">paper</a>]
+                    <!-- [<a href="https://github.com/yuliangguo/nerf-auto-driving">code</a>] -->
+                    [<a href="https://yuliangguo.github.io/depth-any-camera/">project page</a>]
+                    [<a href="https://github.com/yuliangguo/depth_any_camera">code</a>]
+                    <p></p>
+                    <p> 
+                        Depth Any Camera (DAC) is a powerful framework achieving superior zero-shot generalization in metric depth estimation for large FoV cameras, including fisheye and 360°. Tired of collecting new data for specific cameras? DAC maximizes the utility of every existing 3D data for training, regardless of the specific camera types used in new applications. </p>
+                </td>
+            </tr>
 
-    <tr onmouseout="supnerf_stop()" onmouseover="supnerf_start()">
-        <td style="padding:20px;width:40%;vertical-align:middle">
-            <div class="one">
-            <div class="two" id='supnerf_image'><video  width=100% muted autoplay loop>
-            <source src="TODO" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
-            <img src='images/supnerf_demo.gif' width=95%>
-            </div>
-            <script type="text/javascript">
-            function supnerf_start() {
-                document.getElementById('supnerf_image').style.opacity = "1";
-            }
-    
-            function supnerf_stop() {
-                document.getElementById('supnerf_image').style.opacity = "0";
-            }
-            supnerf_stop()
-            </script>
-        </td>
-        <td style="padding:20px;width:60%;vertical-align:middle">
-            <a href="https://yuliangguo.github.io/supnerf/">
-            <span class="papertitle">SUP-NeRF: A Streamlined Unification of Pose Estimation and NeRF for Monocular 3D Object Reconstruction</span>
-            </a>
-            <br>
-            <strong>Yuliang Guo</strong>,
-            Abhinav Kumar,
-            Cheng Zhao,
-            Ruoyu Wang,
-            Xinyu Huang,
-            Liu Ren,
-            <br>
-            <strong>ECCV 2024</strong>
-            <br>
-            [<a href="https://arxiv.org/abs/2403.15705">paper</a>]
-            <!-- [<a href="https://github.com/yuliangguo/nerf-auto-driving">code</a>] -->
-            [<a href="https://yuliangguo.github.io/supnerf/">project page</a>]
-            [<a href="https://github.com/abhi1kumar/SUP-NeRF">code</a>]
-            [<a href="https://github.com/abhi1kumar/SUP-NeRF">talk</a>]
-            <p></p>
-            <p>
-                A monocular object reconstruction framework effectively integrating object pose estimation and NeRF-based reconstruction. A novel camera-invariant pose estimation module is introduced to resolve depth-scale ambiguity and enhance cross-domain generalization.          
-            </p>
-        </td>
-        </tr>
+            <tr onmouseout="smart_stop()" onmouseover="smart_start()" class="publication all">
+                <td style="padding:20px;width:40%;vertical-align:middle">
+                    <div class="one">
+                    <div class="two" id='smart_image'><video  width=100% muted autoplay loop>
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <img src='images/smart_teaser.png' width=95%>
+                    </div>
+                    <script type="text/javascript">
+                    function smart_start() {
+                        document.getElementById('smart_image').style.opacity = "1";
+                    }
+            
+                    function smart_stop() {
+                        document.getElementById('smart_image').style.opacity = "0";
+                    }
+                    smart_stop()
+                    </script>
+                </td>
+                <td style="padding:20px;width:60%;vertical-align:middle">
+                    <a href="https://jay-ye.github.io/smart/">
+                    <span class="papertitle">SMART: Advancing Scalable Map Priors for Driving Topology Reasoning</span>
+                    </a>
+                    <br>
+                    Junjie Ye,
+                    David Paz,
+                    Hengyuan Zhang,
+                    <strong>Yuliang Guo</strong>,
+                    Xinyu Huang,
+                    Henrik I. Christensen,
+                    Yue Wang,
+                    Liu Ren,
+                    <br>
+                    <strong>ICRA 2025</strong>
+                    <br>
+                    [<a href="https://arxiv.org/abs/2502.04329">paper</a>]
+                    [<a href="https://jay-ye.github.io/smart/">project page</a>]
+                    [<a href="https://jay-ye.github.io/smart/">code</a>]
+                    <p></p>
+                    <p> 
+                        SMART augments online topology reasoning with robust map priors learned from scalable SD and satellite maps, substantially improving lane perception and topology reasoning. </p>
+                </td>
+            </tr>
 
-    <tr onmouseout="tclcgs_stop()" onmouseover="tclcgs_start()">
-        <td style="padding:20px;width:40%;vertical-align:middle">
-            <div class="one">
-            <div class="two" id='tclcgs_image'><video  width=100% muted autoplay loop>
-            <source src="TODO" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
-            <img src='images/tclcgs_teasor.png' width=100%>
-            </div>
-            <script type="text/javascript">
-            function tclcgs_start() {
-                document.getElementById('tclcgs_image').style.opacity = "1";
-            }
-    
-            function tclcgs_stop() {
-                document.getElementById('tclcgs_image').style.opacity = "0";
-            }
-            tclcgs_stop()
-            </script>
-        </td>
-        <td style="padding:20px;width:60%;vertical-align:middle">
-            <a href="https://arxiv.org/abs/2404.02410">
-            <span class="papertitle">TCLC-GS: Tightly Coupled LiDAR-Camera Gaussian Splatting for Autonomous Driving</span>
-            </a>
-            <br>
-            Cheng Zhao,
-            Su Sun,
-            Ruoyu Wang,
-            <strong>Yuliang Guo</strong>,
-            Jun-Jun Wan,
-            Zhou Huang,                
-            Xinyu Huang,
-            Yingjie Victor Chen,
-            Liu Ren,
-            <br>
-            <strong>ECCV 2024</strong>
-            <br>
-            [<a href="https://arxiv.org/abs/2404.02410">paper</a>]
-            [<a href="https://github.com/BoschRHI3NA/Video-Demo-ECCV24/tree/main">video demo</a>]
-            <p></p>
-            <p>
-                An advanced Gaussian Splatting method effectively fusing Lidar and surrounding camera views for autonomous driving. The method uniquely leverages an intermediate occ-tree feature volume before GS such that GS parameters can be initialized from feature-volume-generated 3D surface more effectively. 
-            </p>
-        </td>
-        </tr>
+            <tr onmouseout="supnerf_stop()" onmouseover="supnerf_start()" class="publication selected">
+                <td style="padding:40px;width:40%;vertical-align:middle">
+                    <div class="one">
+                    <div class="two" id='supnerf_image'><video  width=100% muted autoplay loop>
+                    <source src="TODO" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <img src='images/supnerf_demo.gif' width=80%>
+                    </div>
+                    <script type="text/javascript">
+                    function supnerf_start() {
+                        document.getElementById('supnerf_image').style.opacity = "1";
+                    }
+            
+                    function supnerf_stop() {
+                        document.getElementById('supnerf_image').style.opacity = "0";
+                    }
+                    supnerf_stop()
+                    </script>
+                </td>
+                <td style="padding:20px;width:60%;vertical-align:middle">
+                    <a href="https://yuliangguo.github.io/supnerf/">
+                    <span class="papertitle">SUP-NeRF: A Streamlined Unification of Pose Estimation and NeRF for Monocular 3D Object Reconstruction</span>
+                    </a>
+                    <br>
+                    <strong>Yuliang Guo</strong>,
+                    Abhinav Kumar,
+                    Cheng Zhao,
+                    Ruoyu Wang,
+                    Xinyu Huang,
+                    Liu Ren,
+                    <br>
+                    <strong>ECCV 2024</strong>
+                    <br>
+                    [<a href="https://arxiv.org/abs/2403.15705">paper</a>]
+                    <!-- [<a href="https://github.com/yuliangguo/nerf-auto-driving">code</a>] -->
+                    [<a href="https://yuliangguo.github.io/supnerf/">project page</a>]
+                    [<a href="https://github.com/abhi1kumar/SUP-NeRF">code</a>]
+                    [<a href="https://github.com/abhi1kumar/SUP-NeRF">talk</a>]
+                    <p></p>
+                    <p>
+                        A monocular object reconstruction framework effectively integrating object pose estimation and NeRF-based reconstruction. A novel camera-invariant pose estimation module is introduced to resolve depth-scale ambiguity and enhance cross-domain generalization.          
+                    </p>
+                </td>
+                </tr>
 
-    <tr onmouseout="iros24sd_stop()" onmouseover="iros24sd_start()">
-        <td style="padding:20px;width:40%;vertical-align:middle">
-            <div class="one">
-            <div class="two" id='iros24sd_image'><video  width=100% muted autoplay loop>
-            <source src="TODO" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
-            <img src='images/iros24sd_teasor.png' width=100%>
-            </div>
-            <script type="text/javascript">
-            function iros24sd_start() {
-                document.getElementById('iros24sd_image').style.opacity = "1";
-            }
-    
-            function iros24sd_stop() {
-                document.getElementById('iros24sd_image').style.opacity = "0";
-            }
-            iros24sd_stop()
-            </script>
-        </td>
-        <td style="padding:20px;width:60%;vertical-align:middle">
-            <a href="https://henryzhangzhy.github.io/sdhdmap/">
-            <span class="papertitle">Enhancing Online Road Network Perception and Reasoning with Standard Definition Maps</span>
-            </a>
-            <br>
-            Hengyuan Zhang,
-            David Paz,
-            <strong>Yuliang Guo</strong>,
-            Arun Das,
-            Xinyu Huang,
-            Karsten Haug,
-            Henrik I. Christensen,
-            Liu Ren,
-            <br>
-            <strong>IROS 2024</strong>
-            <br>
-            [<a href="https://www.arxiv.org/abs/2408.01471">paper</a>]
-            [<a href="https://henryzhangzhy.github.io/sdhdmap/">project page</a>]
-            <p></p>
-            <p>
-                An effective framework leveraging lightweight and scalable priors-Standard Definition (SD) maps in the estimation of online vectorized HD map representations. 
-            </p>
-        </td>
-        </tr>
+            <tr onmouseout="tclcgs_stop()" onmouseover="tclcgs_start()" class="publication all">
+                <td style="padding:20px;width:40%;vertical-align:middle">
+                    <div class="one">
+                    <div class="two" id='tclcgs_image'><video  width=100% muted autoplay loop>
+                    <source src="TODO" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <img src='images/tclcgs_teasor.png' width=100%>
+                    </div>
+                    <script type="text/javascript">
+                    function tclcgs_start() {
+                        document.getElementById('tclcgs_image').style.opacity = "1";
+                    }
+            
+                    function tclcgs_stop() {
+                        document.getElementById('tclcgs_image').style.opacity = "0";
+                    }
+                    tclcgs_stop()
+                    </script>
+                </td>
+                <td style="padding:20px;width:60%;vertical-align:middle">
+                    <a href="https://arxiv.org/abs/2404.02410">
+                    <span class="papertitle">TCLC-GS: Tightly Coupled LiDAR-Camera Gaussian Splatting for Autonomous Driving</span>
+                    </a>
+                    <br>
+                    Cheng Zhao,
+                    Su Sun,
+                    Ruoyu Wang,
+                    <strong>Yuliang Guo</strong>,
+                    Jun-Jun Wan,
+                    Zhou Huang,                
+                    Xinyu Huang,
+                    Yingjie Victor Chen,
+                    Liu Ren,
+                    <br>
+                    <strong>ECCV 2024</strong>
+                    <br>
+                    [<a href="https://arxiv.org/abs/2404.02410">paper</a>]
+                    [<a href="https://github.com/BoschRHI3NA/Video-Demo-ECCV24/tree/main">video demo</a>]
+                    <p></p>
+                    <p>
+                        An advanced Gaussian Splatting method effectively fusing Lidar and surrounding camera views for autonomous driving. The method uniquely leverages an intermediate occ-tree feature volume before GS such that GS parameters can be initialized from feature-volume-generated 3D surface more effectively. 
+                    </p>
+                </td>
+                </tr>
 
-    <tr onmouseout="seabird_stop()" onmouseover="seabird_start()">
-        <td style="padding:20px;width:40%;vertical-align:middle">
-            <div class="one">
-            <div class="two" id='seabird_image'><video  width=100% muted autoplay loop>
-            <source src="images/seabird_demo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
-            <img src='images/Seabird_teasor.gif' width=100%>
-            <!-- <img src='images/Seabird_teaser_nuscenes.png' width=100%> -->
-            </div>
-            <script type="text/javascript">
-            function seabird_start() {
-                document.getElementById('seabird_image').style.opacity = "1";
-            }
-    
-            function seabird_stop() {
-                document.getElementById('seabird_image').style.opacity = "0";
-            }
-            seabird_stop()
-            </script>
-        </td>
-        <td style="padding:20px;width:60%;vertical-align:middle">
-            <a href="https://arxiv.org/abs/2403.20318">
-            <span class="papertitle">SeaBird: Segmentation in Bird’s View with Dice Loss Improves Monocular 3D Detection of Large Objects</span>
-            </a>
-            <br>
-            Abhinav Kumar,
-            <strong>Yuliang Guo</strong>,
-            Xinyu Huang,
-            Liu Ren,
-            Xiaoming Liu
-            <br>
-            <strong>CVPR 2024</strong>
-            <br>
-            [<a href="https://arxiv.org/abs/2403.20318">paper</a>]
-            [<a href="https://github.com/abhi1kumar/SeaBird">code</a>]
-            [<a href="http://cvlab.cse.msu.edu/project-seabird.html">project page</a>]
-            <p></p>
-            <p>
-                A mathematical framework to prove that the dice loss leads to superior noise-robustness and model convergence for large objects compared to regression losses. A flexible monocular 3D detection pipeline integrated with bird-eye view segmentation. 
-            </p>
-        </td>
-        </tr>
-    
+            <tr onmouseout="iros24sd_stop()" onmouseover="iros24sd_start()" class="publication all">
+                <td style="padding:20px;width:40%;vertical-align:middle">
+                    <div class="one">
+                    <div class="two" id='iros24sd_image'><video  width=100% muted autoplay loop>
+                    <source src="TODO" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <img src='images/iros24sd_teasor.png' width=100%>
+                    </div>
+                    <script type="text/javascript">
+                    function iros24sd_start() {
+                        document.getElementById('iros24sd_image').style.opacity = "1";
+                    }
+            
+                    function iros24sd_stop() {
+                        document.getElementById('iros24sd_image').style.opacity = "0";
+                    }
+                    iros24sd_stop()
+                    </script>
+                </td>
+                <td style="padding:20px;width:60%;vertical-align:middle">
+                    <a href="https://henryzhangzhy.github.io/sdhdmap/">
+                    <span class="papertitle">Enhancing Online Road Network Perception and Reasoning with Standard Definition Maps</span>
+                    </a>
+                    <br>
+                    Hengyuan Zhang,
+                    David Paz,
+                    <strong>Yuliang Guo</strong>,
+                    Arun Das,
+                    Xinyu Huang,
+                    Karsten Haug,
+                    Henrik I. Christensen,
+                    Liu Ren,
+                    <br>
+                    <strong>IROS 2024</strong>
+                    <br>
+                    [<a href="https://www.arxiv.org/abs/2408.01471">paper</a>]
+                    [<a href="https://henryzhangzhy.github.io/sdhdmap/">project page</a>]
+                    <p></p>
+                    <p>
+                        An effective framework leveraging lightweight and scalable priors-Standard Definition (SD) maps in the estimation of online vectorized HD map representations. 
+                    </p>
+                </td>
+                </tr>
 
-    <tr onmouseout="behindtheveil_stop()" onmouseover="behindtheveil_start()">
-        <td style="padding:20px;width:40%;vertical-align:middle">
-            <div class="one">
-            <div class="two" id='behindtheveil_image'><video  width=100% muted autoplay loop>
-            <source src="TODO" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
-            <img src='images/Behind_the_veil.gif' width=100%>
-            </div>
-            <script type="text/javascript">
-            function behindtheveil_start() {
-                document.getElementById('behindtheveil_image').style.opacity = "1";
-            }
-    
-            function behindtheveil_stop() {
-                document.getElementById('behindtheveil_image').style.opacity = "0";
-            }
-            behindtheveil_stop()
-            </script>
-        </td>
-        <td style="padding:20px;width:60%;vertical-align:middle">
-            <a href="https://arxiv.org/abs/2404.03070">
-            <span class="papertitle">Behind the Veil: Enhanced Indoor 3D Scene Reconstruction with Occluded Surfaces Completion</span>
-            </a>
-            <br>
-            Su Sun,
-            Cheng Zhao,
-            <strong>Yuliang Guo</strong>,
-            Ruoyu Wang,
-            Xinyu Huang,
-            Victor(Yingjie) Chen,
-            Liu Ren
-            <br>
-            <strong>CVPR 2024</strong>
-            <br>
-            [<a href="https://arxiv.org/abs/2404.03070">paper</a>]
-            [<a href="https://github.com/BoschRHI3NA/3D-CRS-dataset">project page</a>]
-            <p></p>
-            <p>
-                The first neural reconstruction method able to complete the occluded surfaces from large scenes. A key enabler to build interactable environments from real world, generalizing robotic reinforcement learning via reduced domain gap.
-            </p>
-        </td>
-        </tr>
+            <tr onmouseout="seabird_stop()" onmouseover="seabird_start()" class="publication selected">
+                <td style="padding:20px;width:40%;vertical-align:middle">
+                    <div class="one">
+                    <div class="two" id='seabird_image'><video  width=100% muted autoplay loop>
+                    <source src="images/seabird_demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <img src='images/Seabird_teasor.gif' width=100%>
+                    <!-- <img src='images/Seabird_teaser_nuscenes.png' width=100%> -->
+                    </div>
+                    <script type="text/javascript">
+                    function seabird_start() {
+                        document.getElementById('seabird_image').style.opacity = "1";
+                    }
+            
+                    function seabird_stop() {
+                        document.getElementById('seabird_image').style.opacity = "0";
+                    }
+                    seabird_stop()
+                    </script>
+                </td>
+                <td style="padding:20px;width:60%;vertical-align:middle">
+                    <a href="https://arxiv.org/abs/2403.20318">
+                    <span class="papertitle">SeaBird: Segmentation in Bird’s View with Dice Loss Improves Monocular 3D Detection of Large Objects</span>
+                    </a>
+                    <br>
+                    Abhinav Kumar,
+                    <strong>Yuliang Guo</strong><sup>&dagger;</sup>,
+                    Xinyu Huang,
+                    Liu Ren,
+                    Xiaoming Liu
+                    <br>
+                    <strong>CVPR 2024</strong>
+                    <br>
+                    [<a href="https://arxiv.org/abs/2403.20318">paper</a>]
+                    [<a href="https://github.com/abhi1kumar/SeaBird">code</a>]
+                    [<a href="http://cvlab.cse.msu.edu/project-seabird.html">project page</a>]
+                    <p></p>
+                    <p>
+                        A mathematical framework to prove that the dice loss leads to superior noise-robustness and model convergence for large objects compared to regression losses. A flexible monocular 3D detection pipeline integrated with bird-eye view segmentation. 
+                    </p>
+                </td>
+                </tr>
+            
 
-    
-    <tr onmouseout="copypaste_stop()" onmouseover="copypaste_start()">
-        <td style="padding:20px;width:40%;vertical-align:middle">
-            <div class="one">
-            <div class="two" id='copypaste_image'><video  width=100% muted autoplay loop>
-            <source src="images/3D-copy-paste.gif" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
-            <img src='images/3D-copy-paste.gif' width=105%>
-            </div>
-            <script type="text/javascript">
-            function copypaste_start() {
-                document.getElementById('copypaste_image').style.opacity = "1";
-            }
-    
-            function copypaste_stop() {
-                document.getElementById('copypaste_image').style.opacity = "0";
-            }
-            copypaste_stop()
-            </script>
-        </td>
-        <td style="padding:20px;width:60%;vertical-align:middle">
-            <a href="https://gyhandy.github.io/3D-Copy-Paste/">
-            <span class="papertitle">3D Copy-Paste: Physically-Plausible Object Insertion for Monocular 3D Detection</span>
-            </a>
-            <br>
-            Yuhao Ge,
-            Hong-Xing Yu,
-            Cheng Zhao,
-            <strong>Yuliang Guo</strong>,
-            Xinyu Huang,
-            Liu Ren,
-            Laurent Itti,
-            Jiajun Wu
-            <br>
-            <strong>NeurIPS 2023</strong>
-            <br>
-            [<a href="https://arxiv.org/abs/2312.05277">paper</a>]
-            [<a href="https://github.com/gyhandy/3D-Copy-Paste">code</a>]
-            [<a href="https://gyhandy.github.io/3D-Copy-Paste/">project page</a>]
-            <p></p>
-            <p>
-                A physically plausible indoor 3D object insertion approach to automatically "copy" virtual objects and "paste" them into real scenes.
-            </p>
-        </td>
-        </tr>
+            <tr onmouseout="behindtheveil_stop()" onmouseover="behindtheveil_start()" class="publication selected">
+                <td style="padding:20px;width:40%;vertical-align:middle">
+                    <div class="one">
+                    <div class="two" id='behindtheveil_image'><video  width=100% muted autoplay loop>
+                    <source src="TODO" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <img src='images/Behind_the_veil.gif' width=100%>
+                    </div>
+                    <script type="text/javascript">
+                    function behindtheveil_start() {
+                        document.getElementById('behindtheveil_image').style.opacity = "1";
+                    }
+            
+                    function behindtheveil_stop() {
+                        document.getElementById('behindtheveil_image').style.opacity = "0";
+                    }
+                    behindtheveil_stop()
+                    </script>
+                </td>
+                <td style="padding:20px;width:60%;vertical-align:middle">
+                    <a href="https://arxiv.org/abs/2404.03070">
+                    <span class="papertitle">Behind the Veil: Enhanced Indoor 3D Scene Reconstruction with Occluded Surfaces Completion</span>
+                    </a>
+                    <br>
+                    Su Sun,
+                    Cheng Zhao,
+                    <strong>Yuliang Guo</strong><sup>&dagger;</sup>,
+                    Ruoyu Wang,
+                    Xinyu Huang,
+                    Victor(Yingjie) Chen,
+                    Liu Ren
+                    <br>
+                    <strong>CVPR 2024</strong>
+                    <br>
+                    [<a href="https://arxiv.org/abs/2404.03070">paper</a>]
+                    [<a href="https://github.com/BoschRHI3NA/3D-CRS-dataset">project page</a>]
+                    <p></p>
+                    <p>
+                        A novel neural reconstruction method able to complete the occluded surfaces from large scenes. A key enabler to build interactable environments from real world, generalizing robotic reinforcement learning via reduced domain gap.
+                    </p>
+                </td>
+                </tr>
 
-    <tr onmouseout="suoslam_stop()" onmouseover="suoslam_start()">
-        <td style="padding:20px;width:40%;vertical-align:middle">
-            <div class="one">
-            <div class="two" id='suoslam_image'><video  width=100% muted autoplay loop>
-            <source src="images/suo_slam_demo.gif" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
-            <img src='images/suo_slam_demo.gif' width=100%>
-            <img src='images/suo_slam_teaser.png' width=100%>
-            </div>
-            <script type="text/javascript">
-            function suoslam_start() {
-                document.getElementById('suoslam_image').style.opacity = "1";
-            }
-    
-            function suoslam_stop() {
-                document.getElementById('suoslam_image').style.opacity = "0";
-            }
-            suoslam_stop()
-            </script>
-        </td>
-        <td style="padding:20px;width:60%;vertical-align:middle">
-            <a href="https://github.com/rpng/suo_slam">
-            <span class="papertitle">Symmetry and Uncertainty-Aware Object SLAM for 6DoF Object Pose Estimation</span>
-            </a>
-            <br>
-            Nathaniel Merrill,
-            <strong>Yuliang Guo</strong>,
-            Xingxing Zuo,
-            Xinyu Huang,
-            Stefan Leutenegger,
-            Xi Peng,
-            Liu Ren,
-            Guoquan Huang
-            <br>
-            <strong>CVPR 2022</strong>
-            <br>
-            [<a href="https://arxiv.org/abs/2205.01823">paper</a>]
-            [<a href="https://github.com/rpng/suo_slam">code</a>]
-            <p></p>
-            <p>
-                A keypoint-based object-level SLAM framework that can provide globally consistent 6DoF pose estimates for symmetric and asymmetric objects.
-            </p>
-        </td>
-        </tr>
+            
+            <tr onmouseout="copypaste_stop()" onmouseover="copypaste_start()" class="publication all">
+                <td style="padding:20px;width:40%;vertical-align:middle">
+                    <div class="one">
+                    <div class="two" id='copypaste_image'><video  width=100% muted autoplay loop>
+                    <source src="images/3D-copy-paste.gif" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <img src='images/3D-copy-paste.gif' width=105%>
+                    </div>
+                    <script type="text/javascript">
+                    function copypaste_start() {
+                        document.getElementById('copypaste_image').style.opacity = "1";
+                    }
+            
+                    function copypaste_stop() {
+                        document.getElementById('copypaste_image').style.opacity = "0";
+                    }
+                    copypaste_stop()
+                    </script>
+                </td>
+                <td style="padding:20px;width:60%;vertical-align:middle">
+                    <a href="https://gyhandy.github.io/3D-Copy-Paste/">
+                    <span class="papertitle">3D Copy-Paste: Physically-Plausible Object Insertion for Monocular 3D Detection</span>
+                    </a>
+                    <br>
+                    Yuhao Ge,
+                    Hong-Xing Yu,
+                    Cheng Zhao,
+                    <strong>Yuliang Guo</strong>,
+                    Xinyu Huang,
+                    Liu Ren,
+                    Laurent Itti,
+                    Jiajun Wu
+                    <br>
+                    <strong>NeurIPS 2023</strong>
+                    <br>
+                    [<a href="https://arxiv.org/abs/2312.05277">paper</a>]
+                    [<a href="https://github.com/gyhandy/3D-Copy-Paste">code</a>]
+                    [<a href="https://gyhandy.github.io/3D-Copy-Paste/">project page</a>]
+                    <p></p>
+                    <p>
+                        A physically plausible indoor 3D object insertion approach to automatically "copy" virtual objects and "paste" them into real scenes.
+                    </p>
+                </td>
+                </tr>
 
-    
-    <tr onmouseout="omnifusion_stop()" onmouseover="omnifusion_start()">
-        <td style="padding:20px;width:40%;vertical-align:middle">
-            <div class="one">
-            <div class="two" id='omnifusion_image'><video  width=100% muted autoplay loop>
-            <source src="images/OmniFusion.gif" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
-            <img src='images/OmniFusion.gif' width=105%>
-            </div>
-            <script type="text/javascript">
-            function omnifusion_start() {
-                document.getElementById('omnifusion_image').style.opacity = "1";
-            }
-    
-            function omnifusion_stop() {
-                document.getElementById('omnifusion_image').style.opacity = "0";
-            }
-            omnifusion_stop()
-            </script>
-        </td>
-        <td style="padding:20px;width:60%;vertical-align:middle">
-            <a href="https://github.com/yuyanli0831/OmniFusion">
-            <span class="papertitle">OmniFusion: 360 Monocular Depth Estimation via Geometry-Aware Fusion</span>
-            </a>
-            <br>
-            Yuyan Li,
-            <strong>Yuliang Guo</strong>,
-            Zhixin Yan,
-            Xinyu Huang,
-            Ye Duan,
-            Liu Ren,
-            <br>
-            <strong>CVPR 2022 (Oral Presentation)</strong>
-            <br>
-            [<a href="https://arxiv.org/abs/2203.00838">paper</a>]
-            [<a href="https://github.com/yuyanli0831/OmniFusion">code</a>]
-            <p></p>
-            <p>
-                The first transformer approach to handle 360 monocular depth estimation with spherical distortion. Novel designs include tangent-image coordinate embedding and geometry-aware feature fusion. 
-            </p>
-        </td>
-        </tr>
+            <tr onmouseout="suoslam_stop()" onmouseover="suoslam_start()" class="publication selected">
+                <td style="padding:20px;width:40%;vertical-align:middle">
+                    <div class="one">
+                    <div class="two" id='suoslam_image'><video  width=100% muted autoplay loop>
+                    <source src="images/suo_slam_demo.gif" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <img src='images/suo_slam_demo.gif' width=100%>
+                    <img src='images/suo_slam_teaser.png' width=100%>
+                    </div>
+                    <script type="text/javascript">
+                    function suoslam_start() {
+                        document.getElementById('suoslam_image').style.opacity = "1";
+                    }
+            
+                    function suoslam_stop() {
+                        document.getElementById('suoslam_image').style.opacity = "0";
+                    }
+                    suoslam_stop()
+                    </script>
+                </td>
+                <td style="padding:20px;width:60%;vertical-align:middle">
+                    <a href="https://github.com/rpng/suo_slam">
+                    <span class="papertitle">Symmetry and Uncertainty-Aware Object SLAM for 6DoF Object Pose Estimation</span>
+                    </a>
+                    <br>
+                    Nathaniel Merrill,
+                    <strong>Yuliang Guo</strong><sup>&dagger;</sup>,
+                    Xingxing Zuo,
+                    Xinyu Huang,
+                    Stefan Leutenegger,
+                    Xi Peng,
+                    Liu Ren,
+                    Guoquan Huang
+                    <br>
+                    <strong>CVPR 2022</strong>
+                    <br>
+                    [<a href="https://arxiv.org/abs/2205.01823">paper</a>]
+                    [<a href="https://github.com/rpng/suo_slam">code</a>]
+                    <p></p>
+                    <p>
+                        A keypoint-based object-level SLAM framework that can provide globally consistent 6DoF pose estimates for symmetric and asymmetric objects.
+                    </p>
+                </td>
+                </tr>
 
-    
-    <tr onmouseout="popnet_stop()" onmouseover="popnet_start()">
-        <td style="padding:20px;width:40%;vertical-align:middle">
-            <div class="one">
-            <div class="two" id='popnet_image'><video  width=100% muted autoplay loop>
-            <source src="images/Popnet_demo.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
-            <img src='images/Popnet.png' width=100%>
-            </div>
-            <script type="text/javascript">
-            function popnet_start() {
-                document.getElementById('popnet_image').style.opacity = "1";
-            }
-    
-            function popnet_stop() {
-                document.getElementById('popnet_image').style.opacity = "0";
-            }
-            popnet_stop()
-            </script>
-        </td>
-        <td style="padding:20px;width:60%;vertical-align:middle">
-            <a href="https://github.com/oppo-us-research/PoP-Net">
-            <span class="papertitle">PoP-Net: Pose over Parts Network for Multi-Person 3D Pose Estimation from a Depth Image</span>
-            </a>
-            <br>
-            <strong>Yuliang Guo</strong>,
-            Zhong Li,
-            Zekun Li,
-            Xiangyu Du,
-            Shuxue Quan,
-            Yi Xu,
-            <br>
-            <strong>WACV 2022</strong>
-            <br>
-            [<a href="https://arxiv.org/abs/2012.06734">paper</a>]
-            [<a href="https://github.com/oppo-us-research/PoP-Net">code</a>]
-            [<a href="https://github.com/oppo-us-research/PoP-Net">dataset</a>]
-            <p></p>
-            <p>
-                A real-time method to predict multi-person 3D poses from a depth image. Introduce new part-level representation to enables an explicit fusion process of bottom-up part detection and global pose detection. A new 3D human posture dataset with challenging multi-person occlusion.
-            </p>
-        </td>
-        </tr>
+            
+            <tr onmouseout="omnifusion_stop()" onmouseover="omnifusion_start()" class="publication selected">
+                <td style="padding:20px;width:40%;vertical-align:middle">
+                    <div class="one">
+                    <div class="two" id='omnifusion_image'><video  width=100% muted autoplay loop>
+                    <source src="images/OmniFusion.gif" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <img src='images/OmniFusion.gif' width=105%>
+                    </div>
+                    <script type="text/javascript">
+                    function omnifusion_start() {
+                        document.getElementById('omnifusion_image').style.opacity = "1";
+                    }
+            
+                    function omnifusion_stop() {
+                        document.getElementById('omnifusion_image').style.opacity = "0";
+                    }
+                    omnifusion_stop()
+                    </script>
+                </td>
+                <td style="padding:20px;width:60%;vertical-align:middle">
+                    <a href="https://github.com/yuyanli0831/OmniFusion">
+                    <span class="papertitle">OmniFusion: 360 Monocular Depth Estimation via Geometry-Aware Fusion</span>
+                    </a>
+                    <br>
+                    Yuyan Li*,
+                    <strong>Yuliang Guo</strong>*,
+                    Zhixin Yan,
+                    Xinyu Huang,
+                    Ye Duan,
+                    Liu Ren,
+                    <br>
+                    <strong>CVPR 2022 (Oral Presentation)</strong>
+                    <br>
+                    [<a href="https://arxiv.org/abs/2203.00838">paper</a>]
+                    [<a href="https://github.com/yuyanli0831/OmniFusion">code</a>]
+                    <p></p>
+                    <p>
+                        The first transformer approach to handle 360 monocular depth estimation with spherical distortion. Novel designs include tangent-image coordinate embedding and geometry-aware feature fusion. 
+                    </p>
+                </td>
+                </tr>
 
-
-    <tr onmouseout="genlanenet_stop()" onmouseover="genlanenet_start()">
-        <td style="padding:20px;width:40%;vertical-align:middle">
-            <div class="one">
-            <div class="two" id='genlanenet_image'><video  width=100% muted autoplay loop>
-            <source src="images/GenLaneNet.png" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
-            <img src='images/GenLaneNet.png' width=95%>
-            </div>
-            <script type="text/javascript">
-            function genlanenet_start() {
-                document.getElementById('genlanenet_image').style.opacity = "1";
-            }
-    
-            function genlanenet_stop() {
-                document.getElementById('genlanenet_image').style.opacity = "0";
-            }
-            genlanenet_stop()
-            </script>
-        </td>
-        <td style="padding:20px;width:60%;vertical-align:middle">
-            <a href="https://github.com/yuliangguo/Pytorch_Generalized_3D_Lane_Detection">
-            <span class="papertitle">Gen-LaneNet: A Generalized and Scalable Approach for 3D Lane Detection</span>
-            </a>
-            <br>
-            <strong>Yuliang Guo</strong>,
-            GuanGuang Chen, Peitao Zhao, Weide Zhang, Jinghao Miao, Jingao Wang, Tae Eun Choe
-            <br>
-            <strong>ECCV 2020</strong>
-            <br>
-            [<a href="https://arxiv.org/abs/2003.10656">paper</a>]
-            [<a href="https://github.com/yuliangguo/Pytorch_Generalized_3D_Lane_Detection">code</a>]
-            [<a href="https://github.com/yuliangguo/3D_Lane_Synthetic_Dataset">dataset</a>]
-            <p></p>
-            <p>
-                A pioneer work in predicting 3D lanes from a single image with high generalization to novel scenes. A 3D lane synthetic dataset is introduced.
-        </td>
-        </tr>
-    
-
-    <tr onmouseout="diffgeo_stop()" onmouseover="diffgeo_start()">
-        <td style="padding:20px;width:40%;vertical-align:middle">
-            <div class="one">
-            <div class="two" id='diffgeo_image'><video  width=100% muted autoplay loop>
-            <source src="images/diffgeo.png" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
-            <img src='images/DiffGeo_A.png' width=90%>
-            <img src='images/DiffGeo_B.png' width=90%>
-            </div>
-            <script type="text/javascript">
-            function diffgeo_start() {
-                document.getElementById('diffgeo_image').style.opacity = "1";
-            }
-    
-            function diffgeo_stop() {
-                document.getElementById('diffgeo_image').style.opacity = "0";
-            }
-            diffgeo_stop()
-            </script>
-        </td>
-        <td style="padding:20px;width:60%;vertical-align:middle">
-            <a href="https://github.com/yuliangguo/Differential_Geometry_in_Edge_Detection">
-            <span class="papertitle">Differential Geometry in Edge Detection: Accurate Estimation of Position, Orientation and Curvature</span>
-            </a>
-            <br>
-            Benjamin B. Kimia,
-            Xiaoyan Li,
-            <strong>Yuliang Guo</strong>,
-            Amir Tamrakar
-            <br>
-            <strong>TPAMI 2018</strong>
-            <br>
-            [<a href="https://d1wqtxts1xzle7.cloudfront.net/97699503/Tpami.2018.284626820230123-1-9kv4cc.pdf?1674495976=&response-content-disposition=inline%3B+filename%3DDifferential_Geometry_in_Edge_Detection.pdf&Expires=1710221673&Signature=cKAkuzIBnNHTMMX1B3WCjPPK7cxarVPHlT2iHaZI4SOKYmIPd5I1LeN0aUQT-gGVyFv9BHl1s6EBU~YfyKxBh2264RLa71mfwfLav2FXQtbdUH2E2pc5Zkqqm8M0qdFMBCOCeeALccEg7cL6Gxl-U8HJNRg-P8ZJ4n~-YqcKP4ozCo8JhmHVDg9OTIkWUyky6VrOuy0kW~gFRkpOAxfNrEN8x0GJOMTcB22zX-zhv4ex2Z5Jq4nmZsYtfTYpNAReFOCRL-HRhe6IqKFg7~BGmY7jY9b~NFM~8pQ-XmNlukwPQJAWJ6z9YF4ASrivy037x81cVboMrJZc5y1T5UFiIg__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA">paper</a>]
-            [<a href="https://github.com/yuliangguo/Differential_Geometry_in_Edge_Detection">code</a>]
-            [<a href="https://drive.google.com/file/d/1r0s-FLaIrlnlW0Ue-HZEnScP3C4__CEX/view?usp=drive_link">dataset</a>]
-            <p></p>
-            <p>
-                Numerically robust techniques to precisely estimate differential geometry attributes associated with image edges, including localization, orientation, and curvature, as well as edge topology. A curve fragment dataset is introduced for the evaluation of precise geometric attributes. 
-        </td>
-        </tr>
-
-
-    <tr onmouseout="poseshapetrack_stop()" onmouseover="poseshapetrack_start()">
-        <td style="padding:20px;width:40%;vertical-align:middle">
-            <div class="one">
-            <div class="two" id='poseshapetrack_image'><video  width=100% muted autoplay loop>
-            <source src="images/PoseShapeTrack.png" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
-            <img src='images/PoseShapeTrack.png' width=100%>
-            </div>
-            <script type="text/javascript">
-            function poseshapetrack_start() {
-                document.getElementById('poseshapetrack_image').style.opacity = "1";
-            }
-    
-            function poseshapetrack_stop() {
-                document.getElementById('poseshapetrack_image').style.opacity = "0";
-            }
-            poseshapetrack_stop()
-            </script>
-        </td>
-        <td style="padding:20px;width:60%;vertical-align:middle">
-            <a href="https://arxiv.org/abs/1806.11011">
-            <span class="papertitle">Robust Pose Tracking with a Joint Model of Appearance and Shape</span>
-            </a>
-            <br>
-            <strong>Yuliang Guo</strong>,
-            Lakshmi N. Govindarajan, Benjamin B. Kimia, Thomas Serre            
-            <br>
-            <em>arXiv</em> 2018
-            <br>
-            [<a href="https://arxiv.org/abs/1806.11011">paper</a>]
-            <p></p>
-            <p>
-                A novel approach for estimating the 2D pose of an articulated object with an application to automated video analysis of small laboratory animals.
-        </td>
-        </tr>
+            
+            <tr onmouseout="popnet_stop()" onmouseover="popnet_start()" class="publication all">
+                <td style="padding:20px;width:40%;vertical-align:middle">
+                    <div class="one">
+                    <div class="two" id='popnet_image'><video  width=100% muted autoplay loop>
+                    <source src="images/Popnet_demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <img src='images/Popnet.png' width=100%>
+                    </div>
+                    <script type="text/javascript">
+                    function popnet_start() {
+                        document.getElementById('popnet_image').style.opacity = "1";
+                    }
+            
+                    function popnet_stop() {
+                        document.getElementById('popnet_image').style.opacity = "0";
+                    }
+                    popnet_stop()
+                    </script>
+                </td>
+                <td style="padding:20px;width:60%;vertical-align:middle">
+                    <a href="https://github.com/oppo-us-research/PoP-Net">
+                    <span class="papertitle">PoP-Net: Pose over Parts Network for Multi-Person 3D Pose Estimation from a Depth Image</span>
+                    </a>
+                    <br>
+                    <strong>Yuliang Guo</strong>,
+                    Zhong Li,
+                    Zekun Li,
+                    Xiangyu Du,
+                    Shuxue Quan,
+                    Yi Xu,
+                    <br>
+                    <strong>WACV 2022</strong>
+                    <br>
+                    [<a href="https://arxiv.org/abs/2012.06734">paper</a>]
+                    [<a href="https://github.com/oppo-us-research/PoP-Net">code</a>]
+                    [<a href="https://github.com/oppo-us-research/PoP-Net">dataset</a>]
+                    <p></p>
+                    <p>
+                        A real-time method to predict multi-person 3D poses from a depth image. Introduce new part-level representation to enables an explicit fusion process of bottom-up part detection and global pose detection. A new 3D human posture dataset with challenging multi-person occlusion.
+                    </p>
+                </td>
+                </tr>
 
 
-    <tr onmouseout="BoMW_stop()" onmouseover="BoMW_start()">
-        <td style="padding:20px;width:40%;vertical-align:middle">
-            <div class="one">
-            <div class="two" id='BoMW_image'><video  width=100% muted autoplay loop>
-            <source src="images/BoMW.png" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
-            <img src='images/BoMW.png' width=100%>
-            </div>
-            <script type="text/javascript">
-            function BoMW_start() {
-                document.getElementById('BoMW_image').style.opacity = "1";
-            }
-    
-            function BoMW_stop() {
-                document.getElementById('BoMW_image').style.opacity = "0";
-            }
-            BoMW_stop()
-            </script>
-        </td>
-        <td style="padding:20px;width:60%;vertical-align:middle">
-            <a href="https://pureadmin.qub.ac.uk/ws/files/131264882/main_gesture_final.pdf">
-            <span class="papertitle">BoMW: Bag of manifold words for one-shot learning gesture recognition from kinect</span>
-            </a>
-            <br>
-            Lei Zhang, Shengping Zhang, Feng Jiang, Yuankai Qi, Jun Zhang, <strong>Yuliang Guo</strong>, Huiyu Zhou
-            <br>
-            <em>IEEE Transactions on Circuits and Systems for Video Technology 2017</em>
-            <br>
-            [<a href="https://pureadmin.qub.ac.uk/ws/files/131264882/main_gesture_final.pdf">Paper</a>]
-            <p></p>
-            <p>
-                One-shot learning gesture recognition on RGB-D data recorded from Microsoft Kinect. A novel bag of manifold words (BoMW) based feature representation on sysmetric positive definite (SPD) manifolds.
-        </td>
-        </tr>
+            <tr onmouseout="genlanenet_stop()" onmouseover="genlanenet_start()" class="publication selected">
+                <td style="padding:20px;width:40%;vertical-align:middle">
+                    <div class="one">
+                    <div class="two" id='genlanenet_image'><video  width=100% muted autoplay loop>
+                    <source src="images/GenLaneNet.png" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <img src='images/GenLaneNet.png' width=95%>
+                    </div>
+                    <script type="text/javascript">
+                    function genlanenet_start() {
+                        document.getElementById('genlanenet_image').style.opacity = "1";
+                    }
+            
+                    function genlanenet_stop() {
+                        document.getElementById('genlanenet_image').style.opacity = "0";
+                    }
+                    genlanenet_stop()
+                    </script>
+                </td>
+                <td style="padding:20px;width:60%;vertical-align:middle">
+                    <a href="https://github.com/yuliangguo/Pytorch_Generalized_3D_Lane_Detection">
+                    <span class="papertitle">Gen-LaneNet: A Generalized and Scalable Approach for 3D Lane Detection</span>
+                    </a>
+                    <br>
+                    <strong>Yuliang Guo</strong>,
+                    GuanGuang Chen, Peitao Zhao, Weide Zhang, Jinghao Miao, Jingao Wang, Tae Eun Choe
+                    <br>
+                    <strong>ECCV 2020</strong>
+                    <br>
+                    [<a href="https://arxiv.org/abs/2003.10656">paper</a>]
+                    [<a href="https://github.com/yuliangguo/Pytorch_Generalized_3D_Lane_Detection">code</a>]
+                    [<a href="https://github.com/yuliangguo/3D_Lane_Synthetic_Dataset">dataset</a>]
+                    <p></p>
+                    <p>
+                        A pioneer work in predicting 3D lanes from a single image with high generalization to novel scenes. A 3D lane synthetic dataset is introduced.
+                </td>
+                </tr>
+            
 
-    <tr onmouseout="brycue_stop()" onmouseover="brycue_start()">
-        <td style="padding:20px;width:40%;vertical-align:middle">
-            <div class="one">
-            <div class="two" id='brycue_image'><video  width=100% muted autoplay loop>
-            <source src="images/BryCue.png" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
-            <img src='images/BryCue.png' width=100%>
-            </div>
-            <script type="text/javascript">
-            function brycue_start() {
-                document.getElementById('brycue_image').style.opacity = "1";
-            }
-    
-            function brycue_stop() {
-                document.getElementById('brycue_image').style.opacity = "0";
-            }
-            brycue_stop()
-            </script>
-        </td>
-        <td style="padding:20px;width:60%;vertical-align:middle">
-            <a href="https://www.sciencedirect.com/science/article/pii/S0042698915003685">
-            <span class="papertitle">A Systematic Comparison between Visual Cues for Boundary Detection</span>
-            </a>
-            <br>
-            David A. Mely, Junkyung Kim, Mason McGill, <strong>Yuliang Guo</strong>, Thomas Serre
-            <br>
-            <strong>Vision Research 2016</strong>
-            <br>
-            [<a href="https://www.sciencedirect.com/science/article/pii/S0042698915003685">paper</a>]
-            [<a href="https://serre-lab.clps.brown.edu/resource/multicue/">dataset</a>]
-            <p></p>
-            <p>
-                This study investigates the relative diagnosticity and the optimal combination of multiple cues (we consider luminance, color, motion and binocular disparity) for boundary detection in natural scenes. A multi-cue boundary dataset is introduced to facilitate the study.
-        </td>
-        </tr>
+            <tr onmouseout="diffgeo_stop()" onmouseover="diffgeo_start()" class="publication selected">
+                <td style="padding:20px;width:40%;vertical-align:middle">
+                    <div class="one">
+                    <div class="two" id='diffgeo_image'><video  width=100% muted autoplay loop>
+                    <source src="images/diffgeo.png" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <img src='images/DiffGeo_A.png' width=90%>
+                    <img src='images/DiffGeo_B.png' width=90%>
+                    </div>
+                    <script type="text/javascript">
+                    function diffgeo_start() {
+                        document.getElementById('diffgeo_image').style.opacity = "1";
+                    }
+            
+                    function diffgeo_stop() {
+                        document.getElementById('diffgeo_image').style.opacity = "0";
+                    }
+                    diffgeo_stop()
+                    </script>
+                </td>
+                <td style="padding:20px;width:60%;vertical-align:middle">
+                    <a href="https://github.com/yuliangguo/Differential_Geometry_in_Edge_Detection">
+                    <span class="papertitle">Differential Geometry in Edge Detection: Accurate Estimation of Position, Orientation and Curvature</span>
+                    </a>
+                    <br>
+                    Benjamin B. Kimia*,
+                    Xiaoyan Li*,
+                    <strong>Yuliang Guo</strong>*,
+                    Amir Tamrakar
+                    <br>
+                    <strong>TPAMI 2018</strong>
+                    <br>
+                    [<a href="https://d1wqtxts1xzle7.cloudfront.net/97699503/Tpami.2018.284626820230123-1-9kv4cc.pdf?1674495976=&response-content-disposition=inline%3B+filename%3DDifferential_Geometry_in_Edge_Detection.pdf&Expires=1710221673&Signature=cKAkuzIBnNHTMMX1B3WCjPPK7cxarVPHlT2iHaZI4SOKYmIPd5I1LeN0aUQT-gGVyFv9BHl1s6EBU~YfyKxBh2264RLa71mfwfLav2FXQtbdUH2E2pc5Zkqqm8M0qdFMBCOCeeALccEg7cL6Gxl-U8HJNRg-P8ZJ4n~-YqcKP4ozCo8JhmHVDg9OTIkWUyky6VrOuy0kW~gFRkpOAxfNrEN8x0GJOMTcB22zX-zhv4ex2Z5Jq4nmZsYtfTYpNAReFOCRL-HRhe6IqKFg7~BGmY7jY9b~NFM~8pQ-XmNlukwPQJAWJ6z9YF4ASrivy037x81cVboMrJZc5y1T5UFiIg__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA">paper</a>]
+                    [<a href="https://github.com/yuliangguo/Differential_Geometry_in_Edge_Detection">code</a>]
+                    [<a href="https://drive.google.com/file/d/1r0s-FLaIrlnlW0Ue-HZEnScP3C4__CEX/view?usp=drive_link">dataset</a>]
+                    <p></p>
+                    <p>
+                        Numerically robust techniques to precisely estimate differential geometry attributes associated with image edges, including localization, orientation, and curvature, as well as edge topology. A curve fragment dataset is introduced for the evaluation of precise geometric attributes. 
+                </td>
+                </tr>
 
 
-    <tr onmouseout="multistagecurve_stop()" onmouseover="multistagecurve_start()">
-        <td style="padding:20px;width:40%;vertical-align:middle">
-            <div class="one">
-            <div class="two" id='multistagecurve_image'><video  width=100% muted autoplay loop>
-            <source src="images/MultiStageCurve.png" type="video/mp4">
-            Your browser does not support the video tag.
-            </video></div>
-            <!-- <img src='images/MultiStageCurve.png' width=100%> -->
-            <img src='images/MultiStageCurve2.png' width=95%>
-            </div>
-            <script type="text/javascript">
-            function multistagecurve_start() {
-                document.getElementById('multistagecurve_image').style.opacity = "1";
-            }
-    
-            function multistagecurve_stop() {
-                document.getElementById('multistagecurve_image').style.opacity = "0";
-            }
-            multistagecurve_stop()
-            </script>
-        </td>
-        <td style="padding:20px;width:60%;vertical-align:middle">
-            <a href="https://projet.liris.cnrs.fr/imagine/pub/proceedings/ECCV-2014/papers/8689/86890663.pdf">
-            <span class="papertitle">A Multi-Stage Approach to Curve Extraction</span>
-            </a>
-            <br>
-            <strong>Yuliang Guo</strong>, Naman Kumar, Maruthi Narayanan, Benjamin B Kimia
-            <br>
-            <strong>ECCV 2014</strong>
-            <br>
-            [<a href="https://projet.liris.cnrs.fr/imagine/pub/proceedings/ECCV-2014/papers/8689/86890663.pdf">paper</a>]
-            [<a href="https://github.com/yuliangguo/MSEL_contour_extraction_cxx">code</a>]
-            <p></p>
-            <p>
-                A multi-stage approach to curve extraction where the curve fragment search space is iteratively reduced by removing unlikely candidates using geometric constrains, but without affecting recall, to a point where the application of an objective functional becomes appropriate.        
-            </td>
-        </tr>
+            <tr onmouseout="poseshapetrack_stop()" onmouseover="poseshapetrack_start()" class="publication all">
+                <td style="padding:20px;width:40%;vertical-align:middle">
+                    <div class="one">
+                    <div class="two" id='poseshapetrack_image'><video  width=100% muted autoplay loop>
+                    <source src="images/PoseShapeTrack.png" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <img src='images/PoseShapeTrack.png' width=100%>
+                    </div>
+                    <script type="text/javascript">
+                    function poseshapetrack_start() {
+                        document.getElementById('poseshapetrack_image').style.opacity = "1";
+                    }
+            
+                    function poseshapetrack_stop() {
+                        document.getElementById('poseshapetrack_image').style.opacity = "0";
+                    }
+                    poseshapetrack_stop()
+                    </script>
+                </td>
+                <td style="padding:20px;width:60%;vertical-align:middle">
+                    <a href="https://arxiv.org/abs/1806.11011">
+                    <span class="papertitle">Robust Pose Tracking with a Joint Model of Appearance and Shape</span>
+                    </a>
+                    <br>
+                    <strong>Yuliang Guo</strong>,
+                    Lakshmi N. Govindarajan, Benjamin B. Kimia, Thomas Serre            
+                    <br>
+                    <em>arXiv</em> 2018
+                    <br>
+                    [<a href="https://arxiv.org/abs/1806.11011">paper</a>]
+                    <p></p>
+                    <p>
+                        A novel approach for estimating the 2D pose of an articulated object with an application to automated video analysis of small laboratory animals.
+                </td>
+                </tr>
+
+
+            <tr onmouseout="BoMW_stop()" onmouseover="BoMW_start()" class="publication all">
+                <td style="padding:20px;width:40%;vertical-align:middle">
+                    <div class="one">
+                    <div class="two" id='BoMW_image'><video  width=100% muted autoplay loop>
+                    <source src="images/BoMW.png" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <img src='images/BoMW.png' width=100%>
+                    </div>
+                    <script type="text/javascript">
+                    function BoMW_start() {
+                        document.getElementById('BoMW_image').style.opacity = "1";
+                    }
+            
+                    function BoMW_stop() {
+                        document.getElementById('BoMW_image').style.opacity = "0";
+                    }
+                    BoMW_stop()
+                    </script>
+                </td>
+                <td style="padding:20px;width:60%;vertical-align:middle">
+                    <a href="https://pureadmin.qub.ac.uk/ws/files/131264882/main_gesture_final.pdf">
+                    <span class="papertitle">BoMW: Bag of manifold words for one-shot learning gesture recognition from kinect</span>
+                    </a>
+                    <br>
+                    Lei Zhang, Shengping Zhang, Feng Jiang, Yuankai Qi, Jun Zhang, <strong>Yuliang Guo</strong>, Huiyu Zhou
+                    <br>
+                    <em>IEEE Transactions on Circuits and Systems for Video Technology 2017</em>
+                    <br>
+                    [<a href="https://pureadmin.qub.ac.uk/ws/files/131264882/main_gesture_final.pdf">Paper</a>]
+                    <p></p>
+                    <p>
+                        One-shot learning gesture recognition on RGB-D data recorded from Microsoft Kinect. A novel bag of manifold words (BoMW) based feature representation on sysmetric positive definite (SPD) manifolds.
+                </td>
+                </tr>
+
+            <tr onmouseout="brycue_stop()" onmouseover="brycue_start()" class="publication all">
+                <td style="padding:20px;width:40%;vertical-align:middle">
+                    <div class="one">
+                    <div class="two" id='brycue_image'><video  width=100% muted autoplay loop>
+                    <source src="images/BryCue.png" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <img src='images/BryCue.png' width=100%>
+                    </div>
+                    <script type="text/javascript">
+                    function brycue_start() {
+                        document.getElementById('brycue_image').style.opacity = "1";
+                    }
+            
+                    function brycue_stop() {
+                        document.getElementById('brycue_image').style.opacity = "0";
+                    }
+                    brycue_stop()
+                    </script>
+                </td>
+                <td style="padding:20px;width:60%;vertical-align:middle">
+                    <a href="https://www.sciencedirect.com/science/article/pii/S0042698915003685">
+                    <span class="papertitle">A Systematic Comparison between Visual Cues for Boundary Detection</span>
+                    </a>
+                    <br>
+                    David A. Mely, Junkyung Kim, Mason McGill, <strong>Yuliang Guo</strong>, Thomas Serre
+                    <br>
+                    <strong>Vision Research 2016</strong>
+                    <br>
+                    [<a href="https://www.sciencedirect.com/science/article/pii/S0042698915003685">paper</a>]
+                    [<a href="https://serre-lab.clps.brown.edu/resource/multicue/">dataset</a>]
+                    <p></p>
+                    <p>
+                        This study investigates the relative diagnosticity and the optimal combination of multiple cues (we consider luminance, color, motion and binocular disparity) for boundary detection in natural scenes. A multi-cue boundary dataset is introduced to facilitate the study.
+                </td>
+                </tr>
+
+
+            <tr onmouseout="multistagecurve_stop()" onmouseover="multistagecurve_start()" class="publication all">
+                <td style="padding:20px;width:40%;vertical-align:middle">
+                    <div class="one">
+                    <div class="two" id='multistagecurve_image'><video  width=100% muted autoplay loop>
+                    <source src="images/MultiStageCurve.png" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <!-- <img src='images/MultiStageCurve.png' width=100%> -->
+                    <img src='images/MultiStageCurve2.png' width=95%>
+                    </div>
+                    <script type="text/javascript">
+                    function multistagecurve_start() {
+                        document.getElementById('multistagecurve_image').style.opacity = "1";
+                    }
+            
+                    function multistagecurve_stop() {
+                        document.getElementById('multistagecurve_image').style.opacity = "0";
+                    }
+                    multistagecurve_stop()
+                    </script>
+                </td>
+                <td style="padding:20px;width:60%;vertical-align:middle">
+                    <a href="https://projet.liris.cnrs.fr/imagine/pub/proceedings/ECCV-2014/papers/8689/86890663.pdf">
+                    <span class="papertitle">A Multi-Stage Approach to Curve Extraction</span>
+                    </a>
+                    <br>
+                    <strong>Yuliang Guo</strong>, Naman Kumar, Maruthi Narayanan, Benjamin B Kimia
+                    <br>
+                    <strong>ECCV 2014</strong>
+                    <br>
+                    [<a href="https://projet.liris.cnrs.fr/imagine/pub/proceedings/ECCV-2014/papers/8689/86890663.pdf">paper</a>]
+                    [<a href="https://github.com/yuliangguo/MSEL_contour_extraction_cxx">code</a>]
+                    <p></p>
+                    <p>
+                        A multi-stage approach to curve extraction where the curve fragment search space is iteratively reduced by removing unlikely candidates using geometric constrains, but without affecting recall, to a point where the application of an objective functional becomes appropriate.        
+                    </td>
+            </tr>
+
+        </tbody>       
+    </table>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("JavaScript loaded! Defaulting to 'Show Selected'");
+        
+            let publications = document.querySelectorAll(".publication");
+            let showSelectedBtn = document.getElementById("show-selected");
+            let showAllBtn = document.getElementById("show-all");
+        
+            // ✅ Hide non-selected publications on page load
+            publications.forEach(pub => {
+                if (!pub.classList.contains("selected")) {
+                    pub.style.display = "none"; // Hide all publications that are not 'selected'
+                }
+            });
+        
+            // ✅ Underline "Show Selected" by default
+            showSelectedBtn.classList.add("selected-button");
+        
+            showSelectedBtn.addEventListener("click", function(event) {
+                event.preventDefault();
+                publications.forEach(pub => {
+                    if (pub.classList.contains("selected")) {
+                        pub.style.display = "table-row";
+                    } else {
+                        pub.style.display = "none";
+                    }
+                });
+        
+                // ✅ Add underline to "Show Selected" and remove from "Show All"
+                showSelectedBtn.classList.add("selected-button");
+                showAllBtn.classList.remove("selected-button");
+            });
+        
+            showAllBtn.addEventListener("click", function(event) {
+                event.preventDefault();
+                publications.forEach(pub => {
+                    pub.style.display = "table-row";
+                });
+        
+                // ✅ Add underline to "Show All" and remove from "Show Selected"
+                showAllBtn.classList.add("selected-button");
+                showSelectedBtn.classList.remove("selected-button");
+            });
+        });        
+    </script>
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
