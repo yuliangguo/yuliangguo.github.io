@@ -22,10 +22,10 @@
                 <p class="name" style="text-align: center;">
                   Yuliang Guo
                 </p>
-                <p>I'm a Lead (Staff) Research Scientist at Bosch AI Research Center at Silicon Valley, where I lead a team that works on 3D vision and interactive spatial AI solutions.
+                <p>I'm a Lead (Staff) Research Scientist at Bosch AI Research Center at Silicon Valley, where I lead a team that works on 3D vision and spatial AI.
                 </p>
                 <p>
-                    At Bosch, my work focuses on pioneering computer vision and AI research, aimed at enabling generalization across diverse hardware configurations and embodiments. My research has been integrated into multiple Bosch products or prototypes, such as assisted driving technologies, industrial augmented reality (AR) systems, and AI-powered indoor robotics.                
+                    At Bosch, I lead research in computer vision and robotic AI, with a focus on enabling robust generalization across diverse hardware platforms and embodiments. My work has been integrated into large-scale solutions spanning assisted driving, industrial augmented reality (AR), and AI-powered home robotics.                
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:33yuliangguo@gmail.com">Email</a> &nbsp;/&nbsp;
@@ -45,10 +45,31 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                    My research focuses on developing <b>active 3D perception</b> methods adaptable across diverse embodiments and automating the creation of <b>interactive digital twins</b> of real-world environments. The ultimate goal is to enable <b>intelligent human-AI interactions</b> and advance <b>physical AI</b> for greater autonomy and adaptability.
+                    My research aims to enable <b>physical intelligence</b>—systems that can effectively learn new skills through interaction with 3D environments and generalize to novel settings and embodiments. It centers on two core pillars: (1) <b>unified 3D perception</b> that generalizes across diverse robotic platforms and real-world conditions; and (2) the creation of <b>interactive digital twins</b> through causal reconstruction of real-world environments. 
                 </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+                <tr>
+                    <td style="padding:20px;width:100%;vertical-align:middle">
+                        <h2>News</h2>
+                        <ul>
+                            <li>2025/05: Serve as Co-Chair of "Robot Mapping 2" session at ICRA 2025.</li>
+                            <li>2025/03: 1 paper is accepted by IEEE Intelligent Vehicles Symposium (IV 2025).</li>
+                            <li>2025/02: 1 paper is accepted by CVPR 2025.</li>
+                            <li>2025/01: 1 paper is accpected by ICRA 2025.</li>
+                            <li>2024/07: 2 papers are accepted by ECCV 2024.</li>
+                            <li>2024/06: 1 papers is accepted by IROS 2024.</li>
+                            <li>2024/02: 2 papers are accepted by CVPR 2024.</li>
+                            ...
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
 
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
         <tbody>
@@ -67,6 +88,51 @@
 
     <table id="publications-container" style="width:100%;border:0px;">
         <tbody>
+            <tr onmouseout="geer_stop()" onmouseover="geer_start()" class="publication selected">
+                <td style="padding:20px;width:40%;vertical-align:middle">
+                    <div class="one">
+                    <div class="two" id='geer_image'>
+                        <iframe width="100%" height="200" 
+                            src="https://www.youtube.com/embed/Grl9jSMIgds?si=IP7nSGZ3zmhUiGGJ" 
+                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+                            style="vertical-align: middle;">
+                        </iframe>
+                    </div>
+                    <img src='images/3dgeer_teaser.png' width=100%>
+                    </div>
+                    <script type="text/javascript">
+                    function geer_start() {
+                        document.getElementById('geer_image').style.opacity = "1";
+                    }
+            
+                    function geer_stop() {
+                        document.getElementById('geer_image').style.opacity = "0";
+                    }
+                    geer_stop()
+                    </script>
+                </td>
+                <td style="padding:20px;width:60%;vertical-align:middle">
+                    <a href="https://zixunh.github.io/3d-geer/">
+                    <span class="papertitle">3DGEER: Exact and Efficient Volumetric Rendering with 3D Gaussians </span>
+                    </a>
+                    <br>
+                    Zixun Huang,
+                    Cho-Ying Wu,
+                    <strong>Yuliang Guo</strong><sup>&dagger;</sup>,
+                    Xinyu Huang,
+                    Liu Ren
+                    <br>
+                    arXiv 2025
+                    <br>
+                    [<a href="">paper</a>]
+                    [<a href="https://zixunh.github.io/3d-geer/">project page</a>]
+                    [<a href="https://zixunh.github.io/3d-geer/">code</a>]
+                    <p></p>
+                    <p> 
+                        An exact and efficient volumetric Gaussian rendering method with closed-form ray integration, eliminating projective approximation error and supporting large-FoV cameras. A novel bounding strategy ensures both accuracy and speed, achieving state-of-the-art results on novel view synthesis for pinhole and fisheye images.
+                    </p>
+                </td>
+            </tr>
             <tr onmouseout="online_lang_splat_stop()" onmouseover="online_lang_splat_start()" class="publication selected">
                 <td style="padding:20px;width:40%;vertical-align:middle">
                     <div class="one">
@@ -99,13 +165,13 @@
                     <strong>Yuliang Guo</strong><sup>&dagger;</sup>,
                     Xinyu Huang,
                     Guoquan Huang,
-                    Liu Ren,
+                    Liu Ren
                     <br>
                     arXiv 2025
                     <br>
                     [<a href="https://arxiv.org/abs/2503.09447">paper</a>]
                     [<a href="https://saimouli.github.io/onlineLang/">project page</a>]
-                    [<a href="https://saimouli.github.io/onlineLang/">code</a>]
+                    [<a href="https://github.com/rpng/online_lang_splatting">code</a>]
                     <p></p>
                     <p> 
                         A fully online system to effectively integrate dense CLIP features with Gaussian Splatting. High-resolution dense CLIP embedding and online compressor learning modules are introduced to serve dense language mapping at realtime (40+ FPS) while retaining open-vocabulary capability for flexible query-based human-machine interaction.
@@ -141,7 +207,7 @@
                     Sparsh Garg,
                     S. Mahdi H. Miangoleh,
                     Xinyu Huang,
-                    Liu Ren,
+                    Liu Ren
                     <br>
                     <strong>CVPR 2025</strong>
                     <br>
@@ -151,7 +217,8 @@
                     [<a href="https://github.com/yuliangguo/depth_any_camera">code</a>]
                     <p></p>
                     <p> 
-                        Depth Any Camera (DAC) is a powerful framework achieving superior zero-shot generalization in metric depth estimation for large FoV cameras, including fisheye and 360°. Tired of collecting new data for specific cameras? DAC maximizes the utility of every existing 3D data for training, regardless of the specific camera types used in new applications. </p>
+                        Depth Any Camera (DAC) is a training framework for metric depth estimation that enables zero-shot generalization across cameras with diverse fields of view—including fisheye and 360° images. Tired of collecting new data for every camera setup? DAC maximizes the utility of existing 3D datasets, making them applicable to a wide range of camera types without the need for retraining. 
+                    </p>
                 </td>
             </tr>
 
@@ -187,7 +254,7 @@
                     Xinyu Huang,
                     Henrik I. Christensen,
                     Yue Wang,
-                    Liu Ren,
+                    Liu Ren
                     <br>
                     <strong>ICRA 2025</strong>
                     <br>
@@ -230,7 +297,7 @@
                     Cheng Zhao,
                     Ruoyu Wang,
                     Xinyu Huang,
-                    Liu Ren,
+                    Liu Ren
                     <br>
                     <strong>ECCV 2024</strong>
                     <br>
@@ -279,7 +346,7 @@
                     Zhou Huang,                
                     Xinyu Huang,
                     Yingjie Victor Chen,
-                    Liu Ren,
+                    Liu Ren
                     <br>
                     <strong>ECCV 2024</strong>
                     <br>
@@ -324,7 +391,7 @@
                     Xinyu Huang,
                     Karsten Haug,
                     Henrik I. Christensen,
-                    Liu Ren,
+                    Liu Ren
                     <br>
                     <strong>IROS 2024</strong>
                     <br>
@@ -550,7 +617,7 @@
                     Zhixin Yan,
                     Xinyu Huang,
                     Ye Duan,
-                    Liu Ren,
+                    Liu Ren
                     <br>
                     <strong>CVPR 2022 (Oral Presentation)</strong>
                     <br>
@@ -765,7 +832,7 @@
                 </td>
                 </tr>
 
-            <tr onmouseout="brycue_stop()" onmouseover="brycue_start()" class="publication all">
+            <tr onmouseout="brycue_stop()" onmouseover="brycue_start()" class="publication selected">
                 <td style="padding:20px;width:40%;vertical-align:middle">
                     <div class="one">
                     <div class="two" id='brycue_image'><video  width=100% muted autoplay loop>
