@@ -109,15 +109,6 @@
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/pdf/2501.02464" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fas fa-file-pdf"></i>
-                  </span>
                   <span>Paper</span>
                 </a>
               </span>
@@ -128,6 +119,15 @@
                     <i class="fab fa-github"></i>
                   </span>
                   <span>Code</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=U1qGXx0QBwE&ab_channel=YuliangGuo" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
                 </a>
               </span>
               <span class="link-block">
@@ -170,13 +170,14 @@
       <h4 class="subtitle has-text-centered">
         <div class="content has-text-justified"> 
           <p>
-            <b>Depth Any Camera (DAC)</b> is a powerful Zero-Shot Metric Depth Estimation framework that extends a perspective-trained model to handle any type of camera with varying FoVs effectively. 
-            Remarkably, DAC can be <b>trained exclusively on perspective images</b>, yet it generalizes seamlessly to <b>fisheye</b> and <b>360</b> cameras without requiring specialized training data. Key features includes:
-            <ul type="1">
-              <li><b>Zero-shot metric</b> depth estimation on <b>fisheye</b> and <b>360</b> images, significantly outperforming prior metric depth SoTA <a href="https://jugghm.github.io/Metric3Dv2/" target="_blank">Metric3D-v2</a> and <a href="https://github.com/lpiccinelli-eth/UniDepth/tree/main" target="_blank">UniDepth</a></span></li>
-              <li>Geometry-focused training framework <b>adaptable to any network archetecture</b>, extendable to <b>other 3D perception tasks</b></span></li>
-            </ul>
+            <b>Depth Any Camera (DAC)</b> is a powerful Zero-Shot Metric Depth Estimation framework that extends a perspective-trained model to handle any type of camera with varying FoVs. 
             Tired of collecting new data and annotations for every new camera type? DAC allows you to leverage existing data, ensuring that <b>every piece of previously collected 3D data valuable</b>, regardless of the camera type used in a new application.
+            Key features includes:
+            <ul type="1">
+              <li><b>Trained exclusively on perspective images</b>, yet it generalizes seamlessly to <b>fisheye</b> and <b>360</b> cameras without requiring specialized training data.</li>
+              <li><b>Zero-shot metric</b> depth estimation on <b>fisheye</b> and <b>360</b> images, significantly outperforming prior metric depth SoTA <a href="https://jugghm.github.io/Metric3Dv2/" target="_blank">Metric3D-v2</a> and <a href="https://github.com/lpiccinelli-eth/UniDepth/tree/main" target="_blank">UniDepth</a></span></li>
+              <li>Geometry-focused training framework <b>adaptable to any network architecture</b>, extendable to <b>other 3D perception tasks</b></span></li>
+            </ul>
           </p>
           <p>
           </p>
@@ -197,11 +198,11 @@
             The zero-shot metric depth estimation results of Depth Any Camera (DAC) are visualized on ScanNet++ fisheye videos and compared to Metric3D-v2. The visualizations of A.Rel error against ground truth highlight the superior performance of DAC. 
             Additionally, we showcase DAC's application on 360-degree images, where a single forward pass of depth estimation enables full 3D scene reconstruction.
           </p><br>
-          <video poster="" id="ade" autoplay controls muted loop playsinline height="100%">
+          <video poster="" id="ade" autoplay controls muted loop playsinline height="80%">
             <source src="img/videos/video_scannet++_1.mov"
                     type="video/mp4">
           </video>
-          <video poster="" id="ade" autoplay controls muted loop playsinline height="100%">
+          <video poster="" id="ade" autoplay controls muted loop playsinline height="80%">
             <source src="img/videos/video_scannet++_2.mov"
                     type="video/mp4">
           </video>

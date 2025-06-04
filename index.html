@@ -45,7 +45,7 @@
               <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Research</h2>
                 <p>
-                    My research aims to enable <b>physical intelligence</b>—systems that can effectively learn new skills through interaction with 3D environments and generalize to novel settings and embodiments. It centers on two core pillars: (1) <b>unified 3D perception</b> that generalizes across diverse robotic platforms and real-world conditions; and (2) the creation of <b>interactive digital twins</b> through causal reconstruction of real-world environments. 
+                    My research aims to enable <b>physical intelligence</b>—systems that can effectively learn new skills through interaction with 3D environments and generalize to novel settings and embodiments. It centers on two core pillars: (1) <b>unified 3D vision</b> that generalizes across diverse robotic platforms and real-world conditions; and (2) the creation of <b>interactive digital twins</b> via causal real-world reconstruction and video world model. 
                 </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -89,15 +89,13 @@
     <table id="publications-container" style="width:100%;border:0px;">
         <tbody>
             <tr onmouseout="geer_stop()" onmouseover="geer_start()" class="publication selected">
-                <td style="padding:20px;width:40%;vertical-align:middle">
+                <td style="padding:20px; width:40%; vertical-align:top; text-align:center;">
                     <div class="one">
-                    <div class="two" id='geer_image'>
-                        <iframe width="100%" height="200" 
-                            src="https://www.youtube.com/embed/Grl9jSMIgds?si=IP7nSGZ3zmhUiGGJ" 
-                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
-                            style="vertical-align: middle;">
-                        </iframe>
-                    </div>
+                    
+                    <div class="two" id='geer_image'><video  width=100% muted autoplay loop>
+                    <source src="images/3dgeer_berlin3_web.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
                     <img src='images/3dgeer_teaser.png' width=100%>
                     </div>
                     <script type="text/javascript">
@@ -111,7 +109,7 @@
                     geer_stop()
                     </script>
                 </td>
-                <td style="padding:20px;width:60%;vertical-align:middle">
+                <td style="padding:20px;width:60%;vertical-align:top">
                     <a href="https://zixunh.github.io/3d-geer/">
                     <span class="papertitle">3DGEER: Exact and Efficient Volumetric Rendering with 3D Gaussians </span>
                     </a>
@@ -124,25 +122,26 @@
                     <br>
                     arXiv 2025
                     <br>
-                    [<a href="">paper</a>]
+                    [<a href="https://arxiv.org/abs/2505.24053">paper</a>]
                     [<a href="https://zixunh.github.io/3d-geer/">project page</a>]
-                    [<a href="https://zixunh.github.io/3d-geer/">code</a>]
+                    [<a href="https://github.com/zixunh/3DGEER">code</a>]
+                    [<a href="https://www.youtube.com/embed/Grl9jSMIgds?si=IP7nSGZ3zmhUiGGJ">video</a>]
                     <p></p>
                     <p> 
-                        An exact and efficient volumetric Gaussian rendering method with closed-form ray integration, eliminating projective approximation error and supporting large-FoV cameras. A novel bounding strategy ensures both accuracy and speed, achieving state-of-the-art results on novel view synthesis for pinhole and fisheye images.
+                        An efficient volumetric Gaussian rendering method with exact closed-form ray integration, eliminating projective approximation error and supporting large-FoV cameras. A novel particle bounding strategy is introduced to preserve both exactness and speed in ray-particle association.
                     </p>
                 </td>
             </tr>
             <tr onmouseout="online_lang_splat_stop()" onmouseover="online_lang_splat_start()" class="publication selected">
-                <td style="padding:20px;width:40%;vertical-align:middle">
+                <td style="padding:20px; width:40%; vertical-align:top; text-align:center;">
                     <div class="one">
                     <div class="two" id='online_lang_splat_image'>
                         <iframe width="100%" height="240" 
-                            src="https://www.youtube.com/embed/GIldru2006k" 
+                            src="" 
                             frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
                         </iframe>
                     </div>
-                    <img src='images/langslam_teasor.gif' width=85%>
+                    <img src='images/langslam_teasor.gif' width=95%>
                     </div>
                     <script type="text/javascript">
                     function online_lang_splat_start() {
@@ -155,7 +154,7 @@
                     online_lang_splat_stop()
                     </script>
                 </td>
-                <td style="padding:20px;width:60%;vertical-align:middle">
+                <td style="padding:20px; width:60%; vertical-align:top;">
                     <a href="https://saimouli.github.io/onlineLang/">
                     <span class="papertitle">Online Language Splatting </span>
                     </a>
@@ -172,6 +171,7 @@
                     [<a href="https://arxiv.org/abs/2503.09447">paper</a>]
                     [<a href="https://saimouli.github.io/onlineLang/">project page</a>]
                     [<a href="https://github.com/rpng/online_lang_splatting">code</a>]
+                    [<a href="https://www.youtube.com/embed/GIldru2006k">video</a>]
                     <p></p>
                     <p> 
                         A fully online system to effectively integrate dense CLIP features with Gaussian Splatting. High-resolution dense CLIP embedding and online compressor learning modules are introduced to serve dense language mapping at realtime (40+ FPS) while retaining open-vocabulary capability for flexible query-based human-machine interaction.
@@ -185,7 +185,7 @@
                     <source src="depth-any-camera/img/videos/video_scannet++_1.mov" type="video/mp4">
                     Your browser does not support the video tag.
                     </video></div>
-                    <img src='depth-any-camera/img/teaser.png' width=95%>
+                    <img src='depth-any-camera/img/teaser.png' width=100%>
                     </div>
                     <script type="text/javascript">
                     function depth_any_camera_start() {
@@ -215,6 +215,7 @@
                     <!-- [<a href="https://github.com/yuliangguo/nerf-auto-driving">code</a>] -->
                     [<a href="https://yuliangguo.github.io/depth-any-camera/">project page</a>]
                     [<a href="https://github.com/yuliangguo/depth_any_camera">code</a>]
+                    [<a href="https://www.youtube.com/watch?v=U1qGXx0QBwE&ab_channel=YuliangGuo">video</a>]
                     <p></p>
                     <p> 
                         Depth Any Camera (DAC) is a training framework for metric depth estimation that enables zero-shot generalization across cameras with diverse fields of view—including fisheye and 360° images. Tired of collecting new data for every camera setup? DAC maximizes the utility of existing 3D datasets, making them applicable to a wide range of camera types without the need for retraining. 
@@ -305,7 +306,7 @@
                     <!-- [<a href="https://github.com/yuliangguo/nerf-auto-driving">code</a>] -->
                     [<a href="https://yuliangguo.github.io/supnerf/">project page</a>]
                     [<a href="https://github.com/abhi1kumar/SUP-NeRF">code</a>]
-                    [<a href="https://github.com/abhi1kumar/SUP-NeRF">talk</a>]
+                    [<a href="https://github.com/abhi1kumar/SUP-NeRF">video</a>]
                     <p></p>
                     <p>
                         A monocular object reconstruction framework effectively integrating object pose estimation and NeRF-based reconstruction. A novel camera-invariant pose estimation module is introduced to resolve depth-scale ambiguity and enhance cross-domain generalization.          
@@ -408,7 +409,7 @@
                 <td style="padding:20px;width:40%;vertical-align:middle">
                     <div class="one">
                     <div class="two" id='seabird_image'><video  width=100% muted autoplay loop>
-                    <source src="images/seabird_demo.mp4" type="video/mp4">
+                    <source src="" type="video/mp4">
                     Your browser does not support the video tag.
                     </video></div>
                     <img src='images/Seabird_teasor.gif' width=100%>
