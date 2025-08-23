@@ -145,6 +145,51 @@
                 </td>
             </tr>
             
+            <tr onmouseout="charm3r_stop()" onmouseover="charm3r_start()" class="publication all">
+                <td style="padding:20px; width:40%; vertical-align:top; text-align:center;">
+                    <div class="one">
+                    <div class="two" id='charm3r_image'>
+                        <iframe width="100%" height="240" 
+                            src="" 
+                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <img src='images/charm3r_teasor.png' width=100%>
+                    </div>
+                    <script type="text/javascript">
+                    function charm3r_start() {
+                        document.getElementById('charm3r_image').style.opacity = "1";
+                    }
+            
+                    function charm3r_stop() {
+                        document.getElementById('charm3r_image').style.opacity = "0";
+                    }
+                    charm3r_stop()
+                    </script>
+                </td>
+                <td style="padding:20px; width:60%; vertical-align:top;">
+                    <a href="https://github.com/abhi1kumar/CHARM3R">
+                    <span class="papertitle">CHARM3R: Towards Unseen Camera Height Robust Monocular 3D Detector </span>
+                    </a>
+                    <br>
+                    Abhinav Kumar,
+                    <strong>Yuliang Guo</strong>,
+                    Zhihao Zhang,
+                    Xinyu Huang,
+                    Liu Ren,
+                    Xiaoming Liu
+                    <br>
+                    <strong>ICCV 2025</strong>
+                    <br>
+                    [<a href="https://arxiv.org/abs/2508.11185">paper</a>]
+                    [<a href="https://github.com/abhi1kumar/CHARM3R">code</a>]
+                    <p></p>
+                    <p> 
+                         Mathematically proved consistent depth error trends under camera height variations in Mono3D models, and proposed a robust method (CHARM3R) that stabilizes predictions by averaging regressed and ground-based depth estimates.
+                    </p>
+                </td>
+            </tr>
+
             <tr onmouseout="online_lang_splat_stop()" onmouseover="online_lang_splat_start()" class="publication selected">
                 <td style="padding:20px; width:40%; vertical-align:top; text-align:center;">
                     <div class="one">
@@ -191,6 +236,7 @@
                     </p>
                 </td>
             </tr>
+
             <tr onmouseout="depth_any_camera_stop()" onmouseover="depth_any_camera_start()" class="publication selected">
                 <td style="padding:20px;width:40%;vertical-align:middle">
                     <div class="one">
@@ -236,6 +282,48 @@
                 </td>
             </tr>
 
+            <tr onmouseout="mapgs_stop()" onmouseover="mapgs_start()" class="publication all">
+                <td style="padding:20px;width:40%;vertical-align:middle">
+                    <div class="one">
+                    <div class="two" id='mapgs_image'><video  width=100% muted autoplay loop>
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                    <img src='images/mapgs_teaser.jpeg' width=95%>
+                    </div>
+                    <script type="text/javascript">
+                    function mapgs_start() {
+                        document.getElementById('mapgs_image').style.opacity = "1";
+                    }
+            
+                    function mapgs_stop() {
+                        document.getElementById('mapgs_image').style.opacity = "0";
+                    }
+                    mapgs_stop()
+                    </script>
+                </td>
+                <td style="padding:20px;width:60%;vertical-align:middle">
+                    <a href="https://jay-ye.github.io/mapgs/">
+                    <span class="papertitle">MapGS: Generalizable Pretraining and Data Augmentation for Online Mapping via Novel View Synthesis</span>
+                    </a>
+                    <br>
+                    Hengyuan Zhang,
+                    David Paz,
+                    <strong>Yuliang Guo</strong>,
+                    Xinyu Huang,
+                    Henrik I. Christensen,
+                    Liu Ren
+                    <br>
+                    <strong>IEEE IV 2025</strong>
+                    <br>
+                    [<a href="https://arxiv.org/abs/2501.06660">paper</a>]
+                    [<a href="https://henryzhangzhy.github.io/mapgs/">project page</a>]
+                    <p></p>
+                    <p> 
+                        Using Argoverse 2 (AV2) sensor configurations, we employ Gaussian splatting to synthesize images in the nuScenes (NUSC) setup. We show that training online mapping algorithms from GS simulation helps cross-dataset generalization. </p>
+                </td>
+            </tr>
+
             <tr onmouseout="smart_stop()" onmouseover="smart_start()" class="publication all">
                 <td style="padding:20px;width:40%;vertical-align:middle">
                     <div class="one">
@@ -274,7 +362,6 @@
                     <br>
                     [<a href="https://arxiv.org/abs/2502.04329">paper</a>]
                     [<a href="https://jay-ye.github.io/smart/">project page</a>]
-                    [<a href="https://jay-ye.github.io/smart/">code</a>]
                     <p></p>
                     <p> 
                         SMART augments online topology reasoning with robust map priors learned from scalable SD and satellite maps, substantially improving lane perception and topology reasoning. </p>
@@ -445,7 +532,7 @@
                     </a>
                     <br>
                     Abhinav Kumar,
-                    <strong>Yuliang Guo</strong><sup>&dagger;</sup>,
+                    <strong>Yuliang Guo</strong>,
                     Xinyu Huang,
                     Liu Ren,
                     Xiaoming Liu
@@ -490,7 +577,7 @@
                     <br>
                     Su Sun,
                     Cheng Zhao,
-                    <strong>Yuliang Guo</strong><sup>&dagger;</sup>,
+                    <strong>Yuliang Guo</strong>,
                     Ruoyu Wang,
                     Xinyu Huang,
                     Victor(Yingjie) Chen,
@@ -581,7 +668,7 @@
                     </a>
                     <br>
                     Nathaniel Merrill,
-                    <strong>Yuliang Guo</strong><sup>&dagger;</sup>,
+                    <strong>Yuliang Guo</strong>,
                     Xingxing Zuo,
                     Xinyu Huang,
                     Stefan Leutenegger,
@@ -716,7 +803,7 @@
                     </a>
                     <br>
                     <strong>Yuliang Guo</strong>,
-                    GuanGuang Chen, Peitao Zhao, Weide Zhang, Jinghao Miao, Jingao Wang, Tae Eun Choe
+                    Guang Chen, Peitao Zhao, Weide Zhang, Jinghao Miao, Jingao Wang, Tae Eun Choe
                     <br>
                     <strong>ECCV 2020</strong>
                     <br>
