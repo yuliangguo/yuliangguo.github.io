@@ -101,7 +101,7 @@
 
     <table id="publications-container" style="width:100%;border:0px;">
         <tbody>
-            <tr onmouseout="geer_stop()" onmouseover="geer_start()" class="publication selected">
+            <!-- <tr onmouseout="geer_stop()" onmouseover="geer_start()" class="publication selected">
                 <td style="padding:20px; width:40%; vertical-align:top; text-align:center;">
                     <div class="one">
                     
@@ -144,53 +144,9 @@
                         An efficient volumetric Gaussian rendering method with exact closed-form ray integration, eliminating projective approximation error and supporting large-FoV cameras. A novel particle bounding strategy is introduced to preserve both exactness and speed in ray-particle association.
                     </p>
                 </td>
-            </tr>
+            </tr> -->
             
-            <tr onmouseout="charm3r_stop()" onmouseover="charm3r_start()" class="publication all">
-                <td style="padding:20px; width:40%; vertical-align:top; text-align:center;">
-                    <div class="one">
-                    <div class="two" id='charm3r_image'>
-                        <iframe width="100%" height="240" 
-                            src="" 
-                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-                        </iframe>
-                    </div>
-                    <img src='images/charm3r_teasor.png' width=100%>
-                    </div>
-                    <script type="text/javascript">
-                    function charm3r_start() {
-                        document.getElementById('charm3r_image').style.opacity = "1";
-                    }
             
-                    function charm3r_stop() {
-                        document.getElementById('charm3r_image').style.opacity = "0";
-                    }
-                    charm3r_stop()
-                    </script>
-                </td>
-                <td style="padding:20px; width:60%; vertical-align:top;">
-                    <a href="https://github.com/abhi1kumar/CHARM3R">
-                    <span class="papertitle">CHARM3R: Towards Unseen Camera Height Robust Monocular 3D Detector </span>
-                    </a>
-                    <br>
-                    Abhinav Kumar,
-                    <strong>Yuliang Guo</strong>,
-                    Zhihao Zhang,
-                    Xinyu Huang,
-                    Liu Ren,
-                    Xiaoming Liu
-                    <br>
-                    <strong>ICCV 2025</strong>
-                    <br>
-                    [<a href="https://arxiv.org/abs/2508.11185">paper</a>]
-                    [<a href="https://github.com/abhi1kumar/CHARM3R">code</a>]
-                    <p></p>
-                    <p> 
-                         Mathematically proved consistent depth error trends under camera height variations in Mono3D models, and proposed a robust method (CHARM3R) that stabilizes predictions by averaging regressed and ground-based depth estimates.
-                    </p>
-                </td>
-            </tr>
-
             <tr onmouseout="online_lang_splat_stop()" onmouseover="online_lang_splat_start()" class="publication selected">
                 <td style="padding:20px; width:40%; vertical-align:top; text-align:center;">
                     <div class="one">
@@ -234,6 +190,53 @@
                     <p></p>
                     <p> 
                         A fully online system to effectively integrate dense CLIP features with Gaussian Splatting. High-resolution dense CLIP embedding and online compressor learning modules are introduced to serve dense language mapping at realtime (40+ FPS) while retaining open-vocabulary capability for flexible query-based human-machine interaction.
+                    </p>
+                </td>
+            </tr>
+
+            <tr onmouseout="charm3r_stop()" onmouseover="charm3r_start()" class="publication all">
+                <td style="padding:20px; width:40%; vertical-align:top; text-align:center;">
+                    <div class="one">
+                    <div class="two" id='charm3r_image'>
+                        <iframe width="100%" height="240" 
+                            src="" 
+                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div style="background: #fff; border: 2px solid #fff; height: 200px; display: flex; align-items: center; justify-content: center;">
+                        <img src='images/charm3r_teasor.png' style="max-width:100%; max-height:100%; object-fit: contain;">
+                    </div>
+                    </div>
+                    <script type="text/javascript">
+                    function charm3r_start() {
+                        document.getElementById('charm3r_image').style.opacity = "1";
+                    }
+            
+                    function charm3r_stop() {
+                        document.getElementById('charm3r_image').style.opacity = "0";
+                    }
+                    charm3r_stop()
+                    </script>
+                </td>
+                <td style="padding:20px; width:60%; vertical-align:top;">
+                    <a href="https://github.com/abhi1kumar/CHARM3R">
+                    <span class="papertitle">CHARM3R: Towards Unseen Camera Height Robust Monocular 3D Detector </span>
+                    </a>
+                    <br>
+                    Abhinav Kumar,
+                    <strong>Yuliang Guo</strong>,
+                    Zhihao Zhang,
+                    Xinyu Huang,
+                    Liu Ren,
+                    Xiaoming Liu
+                    <br>
+                    <strong>ICCV 2025</strong>
+                    <br>
+                    [<a href="https://arxiv.org/abs/2508.11185">paper</a>]
+                    [<a href="https://github.com/abhi1kumar/CHARM3R">code</a>]
+                    <p></p>
+                    <p> 
+                         Mathematical derivation of consistent depth error trends under camera height variations in Mono3D models. A method generalizable across different camera heights via averaging ego-regressed and ground-based depth estimates.
                     </p>
                 </td>
             </tr>
